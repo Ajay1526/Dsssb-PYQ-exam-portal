@@ -205,19 +205,15 @@ table.it{width:100%;border-collapse:collapse;margin:10px 0}.it th,.it td{border:
  <div class="act"><button onclick="confirmSubmit()">Yes</button><button onclick="goTo(4)">No</button></div>
 </div></div>
 
-<div id="screen6" class="screen"><div class="sum"><div class="t">Exam Completed</div><table><thead><tr><th>Section</th><th>Correct</th><th>Wrong</th><th>Unattempted</th><th>Marks</th></tr></thead><tbody id="resBody"></tbody></table></div></div>
-
 <script>
 const $=id=>document.getElementById(id);
 let D=null, ok=false;
 let lang='en',si=0,qi=0,ans=[],st=[],tm=[],timerId=null,saved=false,attemptId=null,ql=[];
 
-// questions.json फाइल से डेटा लोड करने का नया फंक्शन
 async function loadQuestions() {
   try {
     let response = await fetch('questions.json');
     D = await response.json();
-    
     if (D && D.sections && D.sections.some(s => s.questions.length)) {
       D.sections = D.sections.filter(s => s.questions.length);
       ok = true;
@@ -233,7 +229,6 @@ async function loadQuestions() {
   }
 }
 
-// कोड रन होते ही फाइल लोड करना शुरू करें
 loadQuestions();
 
 function goTo(n){
@@ -310,13 +305,50 @@ function showSummary(){
  goTo(5)}
 function confirmSubmit(){
  if(si<D.sections.length-1){goTo(4);loadSection(si+1)}else finish()}
+
+// यह रहा नया finish फंक्शन जो रिजल्ट पेज पर ले जाएगा
 function finish(){
- clearInterval(timerId);const neg=D.neg??0.25;let h='',tot=0;
- D.sections.forEach((s,i)=>{let c=0,w=0,u=0;s.questions.forEach((q,j)=>{const a=ans[i][j],m=st[i][j]===4;
-  if(a<0||m)u++;else if(a===q.ans)c++;else w++});
-  const mk=c-w*neg;tot+=mk;h+=`<tr><td>${s.name}</td><td>${c}</td><td>${w}</td><td>${u}</td><td>${mk.toFixed(2)}</td></tr>`});
- $('resBody').innerHTML=h+`<tr style="font-weight:bold"><td colspan="4">Total</td><td>${tot.toFixed(2)}</td></tr>`;goTo(6)}
-// drag-to-scroll for subject tabs (left/right)
+ clearInterval(timerId);
+ const neg=D.neg??0.25;
+ let tot=0;
+ 
+ let secDetails = D.sections.map((s,i)=>{
+  let c=0, w=0, u=0;
+  let qArr = s.questions.map((q,j)=>{
+   const ansVal = ans[i][j];
+   const markedRev = st[i][j]===4;
+   if(ansVal<0 || markedRev) u++;
+   else if(ansVal===q.ans) c++;
+   else w++;
+
+   return {
+    t: tm[i][j] || 0,
+    a: markedRev ? -1 : ansVal,
+    c: q.ans
+   };
+  });
+  const mk = c - (w * neg);
+  tot += mk;
+  return { name: s.name, nameHi: s.nameHi, score: mk, q: qArr };
+ });
+
+ const attemptObj = {
+  id: Date.now(),
+  name: "John Smith",
+  date: new Date().toLocaleDateString() + ' ' + new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}),
+  score: Math.round((tot > 0 ? tot : 0) * 100) / 100,
+  sections: secDetails
+ };
+
+ let attemptsList = [];
+ try { attemptsList = JSON.parse(localStorage.getItem('examAttempts')) || []; } catch(e){}
+ attemptsList.push(attemptObj);
+ localStorage.setItem('examAttempts', JSON.stringify(attemptsList));
+ localStorage.setItem('lastAttempt', attemptObj.id);
+
+ window.location.href = 'result.html';
+}
+
 (()=>{const t=$('tabs');let d=false,x=0,l=0;
  t.addEventListener('mousedown',e=>{d=true;x=e.pageX;l=t.scrollLeft;t.classList.add('drag')});
  addEventListener('mouseup',()=>{d=false;t.classList.remove('drag')});
