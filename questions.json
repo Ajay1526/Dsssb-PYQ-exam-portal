@@ -1,10 +1,10 @@
 {
-  "duration": 60,
+  "duration": 30,
   "neg": 0.25,
   "sections": [
     {
-      "name": "General Intelligence and Reasoning (Part 1)",
-      "nameHi": "रीजनिंग और सामान्य प्रश्न (भाग 1)",
+      "name": "Reasoning & General",
+      "nameHi": "रीजनिंग और सामान्य प्रश्न",
       "questions": [
         {
           "qEn": "This question is based on the five three-digit numbers given below. (Left) 691 453 852 657 518 (Right) (Example: 697 – 1st digit = 6, 2nd digit = 9, 3rd digit = 7) If the second digit of the second largest number is added to the third digit of the second smallest number, what will be the result?",
@@ -12,8 +12,8 @@
           "optEn": ["17", "14", "13", "16"],
           "optHi": ["17", "14", "13", "16"],
           "ans": 0,
-          "solEn": "Detailed solution for Q1.",
-          "solHi": "प्रश्न 1 का विस्तृत हल।"
+          "solEn": "Largest = 852, second largest = 691 → second digit 9. Smallest = 453, second smallest = 518 → third digit 8. 9 + 8 = 17.",
+          "solHi": "सबसे बड़ी = 852, दूसरी सबसे बड़ी = 691 → दूसरा अंक 9। सबसे छोटी = 453, दूसरी सबसे छोटी = 518 → तीसरा अंक 8। 9 + 8 = 17।"
         },
         {
           "qEn": "Refer to the series of letters and symbols given below and answer the question. Counting is to be done from left to right only. (Left) # E N % & D ? T & Q F # T & V % + P C G / (Right) How many letters are there, each of which is immediately preceded by a symbol and immediately followed by a letter?",
@@ -21,8 +21,8 @@
           "optEn": ["Two", "One", "Three", "None"],
           "optHi": ["दो", "एक", "तीन", "एक भी नहीं"],
           "ans": 2,
-          "solEn": "Detailed solution for Q2.",
-          "solHi": "प्रश्न 2 का विस्तृत हल।"
+          "solEn": "Letters preceded by a symbol and followed by a letter: E (#_E_N), Q (&_Q_F) and P (+_P_C). Count = 3.",
+          "solHi": "ऐसे अक्षर जिनके ठीक पहले प्रतीक और ठीक बाद अक्षर है: E (#, N), Q (&, F) और P (+, C)। कुल = 3।"
         },
         {
           "qEn": "A, B, C, D, E, F and G are sitting around a circular table facing the centre. Counting from the left of C, only one person sits between A and C. G sits third to the right of E. D sits third to the left of F. G sits immediately to the right of D. B is not an immediate neighbour of D. Counting from the right of F, how many persons sit between D and F?",
@@ -30,8 +30,8 @@
           "optEn": ["1", "3", "4", "2"],
           "optHi": ["1", "3", "4", "2"],
           "ans": 1,
-          "solEn": "Detailed solution for Q3.",
-          "solHi": "प्रश्न 3 का विस्तृत हल।"
+          "solEn": "From the conditions: with E at 0, G, D and F get fixed (G = E−3, D = E−2, F = E+2 going around). A, B, C then fit only as C–A two apart with B not next to D. Counting from the right of F, the persons between F and D are A, E and C = 3.",
+          "solHi": "शर्तों से E को आधार मानने पर G, D और F की जगह तय होती है। फिर A, B, C की जगह इस तरह बनती है कि C और A के बीच एक व्यक्ति हो और B, D का पड़ोसी न हो। F के दाईं ओर से गिनने पर F और D के बीच A, E और C बैठे हैं = 3।"
         },
         {
           "qEn": "Six friends H, I, J, K, C and D live on six different floors of the same building. The lowest floor is numbered 1, the one above it 2, and so on up to the topmost floor numbered 6. Only two persons live between J and D. Only two persons live between H and C. Only one person lives between I and C. I lives on floor 1. J lives above C. How many persons live between K and H?",
@@ -39,8 +39,8 @@
           "optEn": ["Four", "Three", "Two", "One"],
           "optHi": ["चार", "तीन", "दो", "एक"],
           "ans": 3,
-          "solEn": "Detailed solution for Q4.",
-          "solHi": "प्रश्न 4 का विस्तृत हल।"
+          "solEn": "I is on floor 1. One person between I and C → C = 3. Two between H and C → H = 6. J is above C and two between J and D → J = 5, D = 2, so K = 4. Between K (4) and H (6) lives only J = 1 person.",
+          "solHi": "I तल 1 पर है। I और C के बीच एक व्यक्ति → C = 3। H और C के बीच दो → H = 6। J, C के ऊपर है और J-D के बीच दो → J = 5, D = 2, अतः K = 4। K (4) और H (6) के बीच केवल J है = 1 व्यक्ति।"
         },
         {
           "qEn": "In a certain code language, A + B means 'A is the daughter of B', A @ B means 'A is the father of B', A # B means 'A is the son of B', A ÷ B means 'A is the sister of B'. Based on the above, if 'M÷I+N@K#U', how is M related to U?",
@@ -48,8 +48,8 @@
           "optEn": ["Wife", "Daughter", "Mother", "Sister"],
           "optHi": ["पत्नी", "पुत्री", "माता", "बहन"],
           "ans": 1,
-          "solEn": "Detailed solution for Q5.",
-          "solHi": "प्रश्न 5 का विस्तृत हल।"
+          "solEn": "M÷I: M is sister of I. I+N: I is daughter of N. N@K: N is father of K. K#U: K is son of U. So M and K are siblings (children of U). M is the daughter of U.",
+          "solHi": "M÷I: M, I की बहन है। I+N: I, N की पुत्री है। N@K: N, K का पिता है। K#U: K, U का पुत्र है। अतः M और K भाई-बहन हैं, यानी U की संतान। M, U की पुत्री है।"
         },
         {
           "qEn": "If in the word BACKHAND each vowel is replaced by the letter immediately after it and each consonant is replaced by the letter immediately before it in English alphabetical order, which of the following letters will appear exactly three times in the new group of letters?",
@@ -57,8 +57,8 @@
           "optEn": ["G", "C", "B", "J"],
           "optHi": ["G", "C", "B", "J"],
           "ans": 2,
-          "solEn": "Detailed solution for Q6.",
-          "solHi": "प्रश्न 6 का विस्तृत हल।"
+          "solEn": "BACKHAND → vowels +1, consonants −1: B→A, A→B, C→B, K→J, H→G, A→B, N→M, D→C = A B B J G B M C. 'B' appears exactly three times.",
+          "solHi": "BACKHAND → स्वर +1, व्यंजन −1: B→A, A→B, C→B, K→J, H→G, A→B, N→M, D→C = A B B J G B M C। 'B' ठीक तीन बार आता है।"
         },
         {
           "qEn": "R is the father of K. T is the mother of B. R is married to T. G is the brother of K. How is G related to B?",
@@ -66,8 +66,8 @@
           "optEn": ["Sister's husband", "Brother", "Father's brother", "Mother's father"],
           "optHi": ["बहन का पति", "भाई", "पिता का भाई", "माता का पिता"],
           "ans": 1,
-          "solEn": "Detailed solution for Q7.",
-          "solHi": "प्रश्न 7 का विस्तृत हल।"
+          "solEn": "R and T are the parents of K and B. G is K's brother, so G is also B's brother.",
+          "solHi": "R और T, K और B के माता-पिता हैं। G, K का भाई है, इसलिए G, B का भी भाई है।"
         },
         {
           "qEn": "Based on English alphabetical order, IMPH is related to OSVN in a certain way. Similarly, DHKC is related to JNQI. Following the same logic, GKNF is related to which of the given options?",
@@ -75,8 +75,8 @@
           "optEn": ["MQLT", "QMLT", "QMTL", "MQTL"],
           "optHi": ["MQLT", "QMLT", "QMTL", "MQTL"],
           "ans": 3,
-          "solEn": "Detailed solution for Q8.",
-          "solHi": "प्रश्न 8 का विस्तृत हल।"
+          "solEn": "IMPH → OSVN: each letter is +6 (I→O, M→S, P→V, H→N). GKNF: G→M, K→Q, N→T, F→L = MQTL.",
+          "solHi": "IMPH → OSVN: प्रत्येक अक्षर +6 (I→O, M→S, P→V, H→N)। GKNF: G→M, K→Q, N→T, F→L = MQTL।"
         },
         {
           "qEn": "Refer to the following series and answer the question (all numbers are single-digit). Counting is to be done from left to right. (Left) 9 7 8 4 3 5 8 5 6 7 3 7 5 7 1 6 2 4 2 3 2 4 5 4 1 9 (Right) How many even digits are there, each of which is immediately preceded by an even digit and immediately followed by an odd digit?",
@@ -84,8 +84,8 @@
           "optEn": ["2", "5", "4", "3"],
           "optHi": ["2", "5", "4", "3"],
           "ans": 3,
-          "solEn": "Detailed solution for Q9.",
-          "solHi": "प्रश्न 9 का विस्तृत हल।"
+          "solEn": "Even digits with an even digit before and an odd digit after: 4 (8-4-3), 2 (4-2-3) and 4 (2-4-5). Count = 3.",
+          "solHi": "ऐसे सम अंक जिनके पहले सम और बाद में विषम अंक है: 4 (8-4-3), 2 (4-2-3) और 4 (2-4-5)। कुल = 3।"
         },
         {
           "qEn": "A, B, C, D, E and F live on six different floors of the same building. The lowest floor is numbered 1, the one above it 2, and so on up to the topmost floor numbered 6. Only four persons live between D and E. F lives on an even-numbered floor but not on floor 2. C lives immediately below B but above D. How many persons live between A and D?",
@@ -93,8 +93,8 @@
           "optEn": ["Three", "Two", "One", "Four"],
           "optHi": ["तीन", "दो", "एक", "चार"],
           "ans": 0,
-          "solEn": "Detailed solution for Q10.",
-          "solHi": "प्रश्न 10 का विस्तृत हल।"
+          "solEn": "D and E have four between them → D = 1, E = 6 (C is above D). F is even but not 2 → F = 4. C is just below B → C = 2, B = 3, so A = 5. Between A (5) and D (1): floors 2, 3, 4 = 3 persons.",
+          "solHi": "D और E के बीच चार → D = 1, E = 6 (C, D के ऊपर है)। F सम पर पर 2 नहीं → F = 4। C, B के ठीक नीचे → C = 2, B = 3, अतः A = 5। A (5) और D (1) के बीच तल 2, 3, 4 = 3 व्यक्ति।"
         },
         {
           "qEn": "Seven boxes A, B, C, D, E, F and G are placed one above the other, not necessarily in the same order. Only five boxes are placed between C and E. F is placed third from the top. A is placed immediately above D but immediately below B. G is placed immediately above F but immediately below E. How many boxes are placed below D?",
@@ -102,8 +102,8 @@
           "optEn": ["Two", "Four", "One", "Three"],
           "optHi": ["दो", "चार", "एक", "तीन"],
           "ans": 2,
-          "solEn": "Detailed solution for Q11.",
-          "solHi": "प्रश्न 11 का विस्तृत हल।"
+          "solEn": "F is 3rd from top and G just above F, E just above G → E = 1, G = 2, F = 3. Five boxes between C and E → C = 7. B, A, D take 4, 5, 6. Only C is below D = 1 box.",
+          "solHi": "F ऊपर से तीसरे स्थान पर, G उसके ठीक ऊपर, E उसके ठीक ऊपर → E = 1, G = 2, F = 3। C और E के बीच पाँच डिब्बे → C = 7। B, A, D क्रमशः 4, 5, 6। D के नीचे केवल C = 1 डिब्बा।"
         },
         {
           "qEn": "By which letter-clusters should # and % be replaced so that the pattern and relationship between the pair on the left of :: is the same as that between the pair on the right of ::? # : GAD :: PCW : %",
@@ -111,8 +111,8 @@
           "optEn": ["# = DZB , % = SEY", "# = DYA , % = SEY", "# = DYA , % = SEZ", "# = DYB , % = SEZ"],
           "optHi": ["# = DZB , % = SEY", "# = DYA , % = SEY", "# = DYA , % = SEZ", "# = DYB , % = SEZ"],
           "ans": 2,
-          "solEn": "Detailed solution for Q12.",
-          "solHi": "प्रश्न 12 का विस्तृत हल।"
+          "solEn": "GAD relates to # as +3, +2, +3 gives # → GAD, so # = DYA (D+3 = G, Y+2 = A, A+3 = D). Apply the same to PCW: P+3 = S, C+2 = E, W+3 = Z → SEZ.",
+          "solHi": "# से GAD बनने का नियम +3, +2, +3 है, अतः # = DYA (D+3 = G, Y+2 = A, A+3 = D)। यही नियम PCW पर: P+3 = S, C+2 = E, W+3 = Z → SEZ।"
         },
         {
           "qEn": "Refer to the following letter-symbol series and answer the question. Counting is to be done from left to right only. (Left) $ G Z > W J & C U F Z # N B L % < @ U Z (Right) If all the letters are removed from the series, which element will be fourth from the left?",
@@ -120,8 +120,8 @@
           "optEn": ["%", "#", ">", "$"],
           "optHi": ["%", "#", ">", "$"],
           "ans": 1,
-          "solEn": "Detailed solution for Q13.",
-          "solHi": "प्रश्न 13 का विस्तृत हल।"
+          "solEn": "Removing all letters leaves: $ > & # % < @. The fourth element from the left is #.",
+          "solHi": "सभी अक्षर हटाने पर बचता है: $ > & # % < @। बाएँ से चौथा अवयव # है।"
         },
         {
           "qEn": "This question is based on the five three-digit numbers given below. (Left) 249 237 354 745 428 (Right) (Example: 697 – 1st digit = 6, 2nd digit = 9, 3rd digit = 7) If the third digit of the largest number is added to the third digit of the smallest number, what will be the result?",
@@ -129,8 +129,8 @@
           "optEn": ["13", "10", "12", "11"],
           "optHi": ["13", "10", "12", "11"],
           "ans": 2,
-          "solEn": "Detailed solution for Q14.",
-          "solHi": "प्रश्न 14 का विस्तृत हल।"
+          "solEn": "Largest = 745 → third digit 5. Smallest = 237 → third digit 7. 5 + 7 = 12.",
+          "solHi": "सबसे बड़ी = 745 → तीसरा अंक 5। सबसे छोटी = 237 → तीसरा अंक 7। 5 + 7 = 12।"
         },
         {
           "qEn": "Select the triad that follows the same pattern as the two triads given below. Both triads follow the same pattern. JE-LH-OR LG-NJ-QT",
@@ -138,8 +138,8 @@
           "optEn": ["NI-PL-SV", "NI-PL-SU", "MI-PL-SU", "MI-OL-SU"],
           "optHi": ["NI-PL-SV", "NI-PL-SU", "MI-PL-SU", "MI-OL-SU"],
           "ans": 0,
-          "solEn": "Detailed solution for Q15.",
-          "solHi": "प्रश्न 15 का विस्तृत हल।"
+          "solEn": "In each triad the first letters go +2, +3 and the second letters go +3, +10 (JE-LH-OR, LG-NJ-QT). So NI → PL → SV: N+2 = P, P+3 = S; I+3 = L, L+10 = V.",
+          "solHi": "प्रत्येक त्रिक में पहले अक्षर +2, +3 और दूसरे अक्षर +3, +10 से बढ़ते हैं (JE-LH-OR, LG-NJ-QT)। अतः NI → PL → SV: N+2 = P, P+3 = S; I+3 = L, L+10 = V।"
         },
         {
           "qEn": "Seven boxes Q, R, S, T, G, H and I are placed one above the other, not necessarily in the same order. Only one box is placed above I. Only three boxes are placed between T and I. S is placed somewhere below T. Only H is placed between I and Q. G is placed somewhere above I. How many boxes are placed between S and I?",
@@ -147,8 +147,8 @@
           "optEn": ["One", "Two", "Three", "Four"],
           "optHi": ["एक", "दो", "तीन", "चार"],
           "ans": 3,
-          "solEn": "Detailed solution for Q16.",
-          "solHi": "प्रश्न 16 का विस्तृत हल।"
+          "solEn": "One box above I → I = 2nd. Three between T and I → T = 6. S below T → S = 7. Only H between I and Q → H = 3, Q = 4. G above I → G = 1, R = 5. Between S (7) and I (2): positions 3, 4, 5, 6 = 4 boxes.",
+          "solHi": "I के ऊपर एक डिब्बा → I = दूसरा। T और I के बीच तीन → T = 6। S, T के नीचे → S = 7। I और Q के बीच केवल H → H = 3, Q = 4। G, I के ऊपर → G = 1, R = 5। S (7) और I (2) के बीच स्थान 3, 4, 5, 6 = 4 डिब्बे।"
         },
         {
           "qEn": "Refer to the following number and symbol series and answer the question. All numbers are single-digit numbers. Counting is to be done from left to right only. (Left) 5 6 7 8 9 4 3 @ # $ 5 7 % ^ 7 4 # 2 5 (Right) How many symbols are there, each of which is immediately preceded by a number and immediately followed by a number?",
@@ -156,8 +156,8 @@
           "optEn": ["One", "Two", "None", "Three"],
           "optHi": ["एक", "दो", "एक भी नहीं", "तीन"],
           "ans": 0,
-          "solEn": "Detailed solution for Q17.",
-          "solHi": "प्रश्न 17 का विस्तृत हल।"
+          "solEn": "A symbol must have a number on both sides. @, #, $, %, ^ each touch another symbol; only the second # (4 # 2) qualifies. Count = 1.",
+          "solHi": "प्रतीक के दोनों ओर संख्या होनी चाहिए। @, #, $, %, ^ के बगल में दूसरा प्रतीक है; केवल दूसरा # (4 # 2) शर्त पूरी करता है। कुल = 1।"
         },
         {
           "qEn": "In a certain code language, A + B means 'A is the sister of B', A – B means 'A is the brother of B', A x B means 'A is the mother of B', A ÷ B means 'A is the father of B'. Based on the above, if 'Y ÷ F – B x S + R', how is Y related to R?",
@@ -165,8 +165,8 @@
           "optEn": ["Mother's father", "Father's father", "Father's mother", "Mother's mother"],
           "optHi": ["माता का पिता", "पिता का पिता", "पिता की माता", "माता की माता"],
           "ans": 0,
-          "solEn": "Detailed solution for Q18.",
-          "solHi": "प्रश्न 18 का विस्तृत हल।"
+          "solEn": "Y÷F: Y is father of F. F–B: F is brother of B. B×S: B is mother of S. S+R: S is sister of R, so B is also mother of R. Y is father of B, so Y is R's mother's father.",
+          "solHi": "Y÷F: Y, F का पिता है। F–B: F, B का भाई है। B×S: B, S की माता है। S+R: S, R की बहन है, अतः B, R की भी माता है। Y, B का पिता है, इसलिए Y, R की माता का पिता है।"
         },
         {
           "qEn": "Seven persons A, B, C, D, E, F and G are sitting in a straight line facing north. No one sits to the left of G. Only four persons sit between D and B. A sits second to the right of B. C is the immediate neighbour of both E and A. How many persons sit between G and C?",
@@ -174,8 +174,8 @@
           "optEn": ["Two", "Three", "Five", "One"],
           "optHi": ["दो", "तीन", "पांच", "एक"],
           "ans": 1,
-          "solEn": "Detailed solution for Q19.",
-          "solHi": "प्रश्न 19 का विस्तृत हल।"
+          "solEn": "G is at the far left (1). A is second to the right of B and D–B have four between → B = 2, D = 7, A = 4. C is between A and E → C = 5, E = 6, F = 3. Between G (1) and C (5): positions 2, 3, 4 = 3 persons.",
+          "solHi": "G सबसे बाएँ (1) है। A, B के दाईं ओर दूसरे स्थान पर और D-B के बीच चार → B = 2, D = 7, A = 4। C, A और E के बीच → C = 5, E = 6, F = 3। G (1) और C (5) के बीच स्थान 2, 3, 4 = 3 व्यक्ति।"
         },
         {
           "qEn": "In a certain code language, 'FOAM' is coded as '6198' and 'LOAM' is coded as '4698'. What is the code for 'L' in the given code language?",
@@ -183,194 +183,8 @@
           "optEn": ["1", "4", "9", "6"],
           "optHi": ["1", "4", "9", "6"],
           "ans": 1,
-          "solEn": "Detailed solution for Q20.",
-          "solHi": "प्रश्न 20 का विस्तृत हल।"
-        }
-      ]
-    },
-    {
-      "name": "General Intelligence and Reasoning (Part 2)",
-      "nameHi": "रीजनिंग और सामान्य प्रश्न (भाग 2)",
-      "questions": [
-        {
-          "qEn": "This question is based on the five three-digit numbers given below. (Left) 691 453 852 657 518 (Right) (Example: 697 – 1st digit = 6, 2nd digit = 9, 3rd digit = 7) If the second digit of the second largest number is added to the third digit of the second smallest number, what will be the result?",
-          "qHi": "यह प्रश्न नीचे दी गई तीन-अंकीय पाँच संख्याओं पर आधारित है। (बाएँ) 691 453 852 657 518 (दाएँ) (उदाहरण: 697 – पहला अंक = 6, दूसरा अंक = 9 और तीसरा अंक = 7) यदि दूसरी सबसे बड़ी संख्या के दूसरे अंक को दूसरी सबसे छोटी संख्या के तीसरे अंक में जोड़ा जाए, तो क्या परिणाम प्राप्त होगा?",
-          "optEn": ["17", "14", "13", "16"],
-          "optHi": ["17", "14", "13", "16"],
-          "ans": 0,
-          "solEn": "Detailed solution for Section 2 Q1.",
-          "solHi": "भाग 2 प्रश्न 1 का विस्तृत हल।"
-        },
-        {
-          "qEn": "Refer to the series of letters and symbols given below and answer the question. Counting is to be done from left to right only. (Left) # E N % & D ? T & Q F # T & V % + P C G / (Right) How many letters are there, each of which is immediately preceded by a symbol and immediately followed by a letter?",
-          "qHi": "नीचे दी गई अक्षर-प्रतीक श्रृंखला का संदर्भ लीजिए और दिए गए प्रश्न का उत्तर दीजिए। गिनती केवल बाएं से दाएं की जानी है। (बाएं) # E N % & D ? T & Q F # T & V % + P C G / (दाएं) ऐसे कितने अक्षर हैं, जिनमें से प्रत्येक के ठीक पहले एक प्रतीक और ठीक बाद में एक अक्षर है?",
-          "optEn": ["Two", "One", "Three", "None"],
-          "optHi": ["दो", "एक", "तीन", "एक भी नहीं"],
-          "ans": 2,
-          "solEn": "Detailed solution for Section 2 Q2.",
-          "solHi": "भाग 2 प्रश्न 2 का विस्तृत हल।"
-        },
-        {
-          "qEn": "A, B, C, D, E, F and G are sitting around a circular table facing the centre. Counting from the left of C, only one person sits between A and C. G sits third to the right of E. D sits third to the left of F. G sits immediately to the right of D. B is not an immediate neighbour of D. Counting from the right of F, how many persons sit between D and F?",
-          "qHi": "A, B, C, D, E, F और G एक गोल मेज के परितः केंद्र की ओर अभिमुख होकर बैठे हैं। C के बाईं ओर से गिनने पर, A और C के बीच केवल एक व्यक्ति बैठा है। G, E के दाईं ओर तीसरे स्थान पर बैठा है। D, F के बाईं ओर तीसरे स्थान पर बैठा है। G, D के ठीक दाईं ओर पड़ोस में बैठा है। B, D का निकटतम पड़ोसी नहीं है। F के दाईं ओर से गिनने पर, D और F के बीच कितने व्यक्ति बैठे हैं?",
-          "optEn": ["1", "3", "4", "2"],
-          "optHi": ["1", "3", "4", "2"],
-          "ans": 1,
-          "solEn": "Detailed solution for Section 2 Q3.",
-          "solHi": "भाग 2 प्रश्न 3 का विस्तृत हल।"
-        },
-        {
-          "qEn": "Six friends H, I, J, K, C and D live on six different floors of the same building. The lowest floor is numbered 1, the one above it 2, and so on up to the topmost floor numbered 6. Only two persons live between J and D. Only two persons live between H and C. Only one person lives between I and C. I lives on floor 1. J lives above C. How many persons live between K and H?",
-          "qHi": "छह मित्र H, I, J, K, C और D एक ही इमारत के छह अलग-अलग तलों पर रहते हैं। इमारत के सबसे निचले तल का क्रमांक 1 है, उसके ऊपर वाले तल का क्रमांक 2 है, और इसी तरह सबसे ऊपरी तल का क्रमांक 6 है। J और D के बीच केवल दो व्यक्ति रहते हैं। H और C के बीच भी केवल दो व्यक्ति रहते हैं। I और C के बीच केवल एक व्यक्ति रहता है। I पहले तल पर रहता है। J, C के ऊपर रहता है। K और H के बीच कितने व्यक्ति रहते हैं?",
-          "optEn": ["Four", "Three", "Two", "One"],
-          "optHi": ["चार", "तीन", "दो", "एक"],
-          "ans": 3,
-          "solEn": "Detailed solution for Section 2 Q4.",
-          "solHi": "भाग 2 प्रश्न 4 का विस्तृत हल।"
-        },
-        {
-          "qEn": "In a certain code language, A + B means 'A is the daughter of B', A @ B means 'A is the father of B', A # B means 'A is the son of B', A ÷ B means 'A is the sister of B'. Based on the above, if 'M÷I+N@K#U', how is M related to U?",
-          "qHi": "एक निश्चित कूट भाषा में, A + B का अर्थ है कि 'A, B की पुत्री है' A @ B का अर्थ है कि 'A, B का पिता है' A # B का अर्थ है कि 'A, B का पुत्र है' A ÷ B का अर्थ है कि 'A, B की बहन है' उपरोक्त के आधार पर, यदि 'M÷I+N@K#U' है, तो M का U से क्या संबंध है?",
-          "optEn": ["Wife", "Daughter", "Mother", "Sister"],
-          "optHi": ["पत्नी", "पुत्री", "माता", "बहन"],
-          "ans": 1,
-          "solEn": "Detailed solution for Section 2 Q5.",
-          "solHi": "भाग 2 प्रश्न 5 का विस्तृत हल।"
-        },
-        {
-          "qEn": "If in the word BACKHAND each vowel is replaced by the letter immediately after it and each consonant is replaced by the letter immediately before it in English alphabetical order, which of the following letters will appear exactly three times in the new group of letters?",
-          "qHi": "यदि शब्द BACKHAND में प्रत्येक स्वर को अंग्रेजी वर्णमाला क्रम में उसके ठीक बाद वाले अक्षर से बदल दिया जाए और प्रत्येक व्यंजन को अंग्रेजी वर्णमाला क्रम में उसके ठीक पहले वाले अक्षर से बदल दिया जाए, तो इस प्रकार बने अक्षरों के समूह में निम्नलिखित में से कौन-सा अक्षर ठीक तीन बार आएगा?",
-          "optEn": ["G", "C", "B", "J"],
-          "optHi": ["G", "C", "B", "J"],
-          "ans": 2,
-          "solEn": "Detailed solution for Section 2 Q6.",
-          "solHi": "भाग 2 प्रश्न 6 का विस्तृत हल।"
-        },
-        {
-          "qEn": "R is the father of K. T is the mother of B. R is married to T. G is the brother of K. How is G related to B?",
-          "qHi": "R, K का पिता है। T, B की माता है। R का विवाह T से हुआ है। G, K का भाई है। G का B से क्या संबंध है?",
-          "optEn": ["Sister's husband", "Brother", "Father's brother", "Mother's father"],
-          "optHi": ["बहन का पति", "भाई", "पिता का भाई", "माता का पिता"],
-          "ans": 1,
-          "solEn": "Detailed solution for Section 2 Q7.",
-          "solHi": "भाग 2 प्रश्न 7 का विस्तृत हल।"
-        },
-        {
-          "qEn": "Based on English alphabetical order, IMPH is related to OSVN in a certain way. Similarly, DHKC is related to JNQI. Following the same logic, GKNF is related to which of the given options?",
-          "qHi": "अंग्रेजी वर्णमाला क्रम के आधार पर एक निश्चित तरीके से IMPH का संबंध OSVN से है। उसी प्रकार, DHKC का संबंध JNQI से है। समान तर्क का अनुसरण करते हुए, GKNF का संबंध दिए गए विकल्पों में से किससे है?",
-          "optEn": ["MQLT", "QMLT", "QMTL", "MQTL"],
-          "optHi": ["MQLT", "QMLT", "QMTL", "MQTL"],
-          "ans": 3,
-          "solEn": "Detailed solution for Section 2 Q8.",
-          "solHi": "भाग 2 प्रश्न 8 का विस्तृत हल।"
-        },
-        {
-          "qEn": "Refer to the following series and answer the question (all numbers are single-digit). Counting is to be done from left to right. (Left) 9 7 8 4 3 5 8 5 6 7 3 7 5 7 1 6 2 4 2 3 2 4 5 4 1 9 (Right) How many even digits are there, each of which is immediately preceded by an even digit and immediately followed by an odd digit?",
-          "qHi": "निम्नलिखित श्रृंखला का संदर्भ लीजिए और प्रश्न का उत्तर दीजिए (सभी संख्याएँ केवल एक अंक वाली संख्याएँ हैं)। गिनती बाएँ से दाएँ की जानी चाहिए। (बाएँ) 9 7 8 4 3 5 8 5 6 7 3 7 5 7 1 6 2 4 2 3 2 4 5 4 1 9 (दाएँ) ऐसे कितने सम अंक हैं जिनमें से प्रत्येक के ठीक पहले एक सम अंक और ठीक बाद एक विषम अंक है?",
-          "optEn": ["2", "5", "4", "3"],
-          "optHi": ["2", "5", "4", "3"],
-          "ans": 3,
-          "solEn": "Detailed solution for Section 2 Q9.",
-          "solHi": "भाग 2 प्रश्न 9 का विस्तृत हल।"
-        },
-        {
-          "qEn": "A, B, C, D, E and F live on six different floors of the same building. The lowest floor is numbered 1, the one above it 2, and so on up to the topmost floor numbered 6. Only four persons live between D and E. F lives on an even-numbered floor but not on floor 2. C lives immediately below B but above D. How many persons live between A and D?",
-          "qHi": "A, B, C, D, E और F एक ही इमारत के छह विभिन्न तलों पर रहते हैं। इमारत के सबसे नीचे वाले तल का क्रमांक 1 है, उसके ऊपर वाले तल का क्रमांक 2 है, और इसी तरह सबसे ऊपर वाले तल का क्रमांक 6 है। D और E के बीच केवल चार व्यक्ति रहते हैं। F एक सम क्रमांक वाले तल पर रहता है, लेकिन तल क्रमांक 2 पर नहीं रहता है। C, B के ठीक नीचे रहता है लेकिन D के ऊपर रहता है। A और D के बीच कितने व्यक्ति रहते हैं?",
-          "optEn": ["Three", "Two", "One", "Four"],
-          "optHi": ["तीन", "दो", "एक", "चार"],
-          "ans": 0,
-          "solEn": "Detailed solution for Section 2 Q10.",
-          "solHi": "भाग 2 प्रश्न 10 का विस्तृत हल।"
-        },
-        {
-          "qEn": "Seven boxes A, B, C, D, E, F and G are placed one above the other, not necessarily in the same order. Only five boxes are placed between C and E. F is placed third from the top. A is placed immediately above D but immediately below B. G is placed immediately above F but immediately below E. How many boxes are placed below D?",
-          "qHi": "सात डिब्बे, A, B, C, D, E, F और G, एक-दूसरे के ऊपर रखे गए हैं, लेकिन जरूरी नहीं कि वे इसी क्रम में रखे गए हों। C और E के बीच केवल पांच डिब्बे रखे गए हैं। F को ऊपर से तीसरे स्थान पर रखा गया है। A को D के ठीक ऊपर लेकिन B के ठीक नीचे रखा गया है। G को F के ठीक ऊपर लेकिन E के ठीक नीचे रखा गया है। D के नीचे कितने डिब्बे रखे गए हैं?",
-          "optEn": ["Two", "Four", "One", "Three"],
-          "optHi": ["दो", "चार", "एक", "तीन"],
-          "ans": 2,
-          "solEn": "Detailed solution for Section 2 Q11.",
-          "solHi": "भाग 2 प्रश्न 11 का विस्तृत हल।"
-        },
-        {
-          "qEn": "By which letter-clusters should # and % be replaced so that the pattern and relationship between the pair on the left of :: is the same as that between the pair on the right of ::? # : GAD :: PCW : %",
-          "qHi": "निम्नलिखित में से किस अक्षर-समूह द्वारा # और % को प्रतिस्थापित किया जाना चाहिए ताकि :: के बाईं ओर के अक्षर-समूह युग्म के बीच अनुसरण किया गया पैटर्न और संबंध, :: के दाईं ओर के अक्षर-समूह युग्म के बीच अनुसरण किए गए पैटर्न और संबंध के समान हो? # : GAD :: PCW : %",
-          "optEn": ["# = DZB , % = SEY", "# = DYA , % = SEY", "# = DYA , % = SEZ", "# = DYB , % = SEZ"],
-          "optHi": ["# = DZB , % = SEY", "# = DYA , % = SEY", "# = DYA , % = SEZ", "# = DYB , % = SEZ"],
-          "ans": 2,
-          "solEn": "Detailed solution for Section 2 Q12.",
-          "solHi": "भाग 2 प्रश्न 12 का विस्तृत हल।"
-        },
-        {
-          "qEn": "Refer to the following letter-symbol series and answer the question. Counting is to be done from left to right only. (Left) $ G Z > W J & C U F Z # N B L % < @ U Z (Right) If all the letters are removed from the series, which element will be fourth from the left?",
-          "qHi": "निम्नलिखित अक्षर-प्रतीक श्रृंखला का संदर्भ लीजिए और उसके बाद दिए गए प्रश्न का उत्तर दीजिए। गिनती केवल बाएं से दाएं ही की जानी है। (बाएं) $ G Z > W J & C U F Z # N B L % < @ U Z (दाएं) यदि सभी अक्षरों को श्रृंखला से हटा दिया जाए, तो कौन-सा अवयव बाएं से चौथा होगा?",
-          "optEn": ["%", "#", ">", "$"],
-          "optHi": ["%", "#", ">", "$"],
-          "ans": 1,
-          "solEn": "Detailed solution for Section 2 Q13.",
-          "solHi": "भाग 2 प्रश्न 13 का विस्तृत हल।"
-        },
-        {
-          "qEn": "This question is based on the five three-digit numbers given below. (Left) 249 237 354 745 428 (Right) (Example: 697 – 1st digit = 6, 2nd digit = 9, 3rd digit = 7) If the third digit of the largest number is added to the third digit of the smallest number, what will be the result?",
-          "qHi": "यह प्रश्न नीचे दी गई तीन अंकों वाली पाँच संख्याओं पर आधारित है। (बाएँ) 249 237 354 745 428 (दाएँ) (उदाहरण: 697 – पहला अंक = 6, दूसरा अंक = 9 और तीसरा अंक = 7) यदि सबसे बड़ी संख्या के तीसरे अंक को सबसे छोटी संख्या के तीसरे अंक में जोड़ा जाए, तो क्या परिणाम प्राप्त होगा?",
-          "optEn": ["13", "10", "12", "11"],
-          "optHi": ["13", "10", "12", "11"],
-          "ans": 2,
-          "solEn": "Detailed solution for Section 2 Q14.",
-          "solHi": "भाग 2 प्रश्न 14 का विस्तृत हल।"
-        },
-        {
-          "qEn": "Select the triad that follows the same pattern as the two triads given below. Both triads follow the same pattern. JE-LH-OR LG-NJ-QT",
-          "qHi": "उस त्रिक का चयन कीजिए, जो नीचे दिए गए दो त्रिकों के समान पैटर्न का अनुसरण करता है। दोनों त्रिक समान पैटर्न का अनुसरण करते हैं। JE-LH-OR LG-NJ-QT",
-          "optEn": ["NI-PL-SV", "NI-PL-SU", "MI-PL-SU", "MI-OL-SU"],
-          "optHi": ["NI-PL-SV", "NI-PL-SU", "MI-PL-SU", "MI-OL-SU"],
-          "ans": 0,
-          "solEn": "Detailed solution for Section 2 Q15.",
-          "solHi": "भाग 2 प्रश्न 15 का विस्तृत हल।"
-        },
-        {
-          "qEn": "Seven boxes Q, R, S, T, G, H and I are placed one above the other, not necessarily in the same order. Only one box is placed above I. Only three boxes are placed between T and I. S is placed somewhere below T. Only H is placed between I and Q. G is placed somewhere above I. How many boxes are placed between S and I?",
-          "qHi": "सात डिब्बे, Q, R, S, T, G, H और I, एक के ऊपर एक रखे गए हैं, लेकिन जरूरी नहीं कि इसी क्रम में हों। I के ऊपर केवल एक डिब्बा रखा गया है। T और I के बीच केवल तीन डिब्बे रखे गए हैं। S को T के नीचे किसी एक स्थान पर रखा गया है। I और Q के बीच केवल H को रखा गया है। G को I के ऊपर किसी एक स्थान पर रखा गया है। S और I के बीच कितने डिब्बे रखे गए हैं?",
-          "optEn": ["One", "Two", "Three", "Four"],
-          "optHi": ["एक", "दो", "तीन", "चार"],
-          "ans": 3,
-          "solEn": "Detailed solution for Section 2 Q16.",
-          "solHi": "भाग 2 प्रश्न 16 का विस्तृत हल।"
-        },
-        {
-          "qEn": "Refer to the following number and symbol series and answer the question. All numbers are single-digit numbers. Counting is to be done from left to right only. (Left) 5 6 7 8 9 4 3 @ # $ 5 7 % ^ 7 4 # 2 5 (Right) How many symbols are there, each of which is immediately preceded by a number and immediately followed by a number?",
-          "qHi": "निम्नलिखित संख्या और प्रतीक श्रृंखला का संदर्भ लीजिए और नीचे दिए गए प्रश्न का उत्तर दीजिए। सभी संख्याएं केवल एक-अंकीय संख्याएं हैं। गिनती केवल बाएं से दाएं की जानी है। (बाएं) 5 6 7 8 9 4 3 @ # $ 5 7 % ^ 7 4 # 2 5 (दाएं) ऐसे कितने प्रतीक हैं जिनमें से प्रत्येक के ठीक पहले एक संख्या है और ठीक बाद में भी एक संख्या है?",
-          "optEn": ["One", "Two", "None", "Three"],
-          "optHi": ["एक", "दो", "एक भी नहीं", "तीन"],
-          "ans": 0,
-          "solEn": "Detailed solution for Section 2 Q17.",
-          "solHi": "भाग 2 प्रश्न 17 का विस्तृत हल।"
-        },
-        {
-          "qEn": "In a certain code language, A + B means 'A is the sister of B', A – B means 'A is the brother of B', A x B means 'A is the mother of B', A ÷ B means 'A is the father of B'. Based on the above, if 'Y ÷ F – B x S + R', how is Y related to R?",
-          "qHi": "एक निश्चित कूट भाषा में, A + B का अर्थ है कि 'A, B की बहन है' A – B का अर्थ है कि 'A, B का भाई है' A x B का अर्थ है कि 'A, B की माता है' A ÷ B का अर्थ है कि 'A, B का पिता है' उपरोक्त के आधार पर, यदि 'Y ÷ F – B x S + R' है, तो Y का R से क्या संबंध है?",
-          "optEn": ["Mother's father", "Father's father", "Father's mother", "Mother's mother"],
-          "optHi": ["माता का पिता", "पिता का पिता", "पिता की माता", "माता की माता"],
-          "ans": 0,
-          "solEn": "Detailed solution for Section 2 Q18.",
-          "solHi": "भाग 2 प्रश्न 18 का विस्तृत हल।"
-        },
-        {
-          "qEn": "Seven persons A, B, C, D, E, F and G are sitting in a straight line facing north. No one sits to the left of G. Only four persons sit between D and B. A sits second to the right of B. C is the immediate neighbour of both E and A. How many persons sit between G and C?",
-          "qHi": "सात व्यक्ति A, B, C, D, E, F और G उत्तर की ओर अभिमुख होकर एक सीधी पंक्ति में बैठे हैं। G के बाईं ओर कोई नहीं बैठा है। D और B के बीच केवल चार व्यक्ति बैठे हैं। A, B के दाईं ओर दूसरे स्थान पर बैठा है। E और A का निकटतम पड़ोसी C है। G और C के बीच कितने व्यक्ति बैठे हैं?",
-          "optEn": ["Two", "Three", "Five", "One"],
-          "optHi": ["दो", "तीन", "पांच", "एक"],
-          "ans": 1,
-          "solEn": "Detailed solution for Section 2 Q19.",
-          "solHi": "भाग 2 प्रश्न 19 का विस्तृत हल।"
-        },
-        {
-          "qEn": "In a certain code language, 'FOAM' is coded as '6198' and 'LOAM' is coded as '4698'. What is the code for 'L' in the given code language?",
-          "qHi": "किसी निश्चित कूट भाषा में, 'FOAM' को '6198' के रूप में कूटबद्ध किया जाता है और 'LOAM' को '4698' के रूप में कूटबद्ध किया जाता है। दी गई कूट भाषा में 'L' का कूट क्या है?",
-          "optEn": ["1", "4", "9", "6"],
-          "optHi": ["1", "4", "9", "6"],
-          "ans": 1,
-          "solEn": "Detailed solution for Section 2 Q20.",
-          "solHi": "भाग 2 प्रश्न 20 का विस्तृत हल।"
+          "solEn": "FOAM = 6198 and LOAM = 4698 share O, A, M (digits 6, 9, 8). F alone gives 1 and L alone gives 4. So L = 4.",
+          "solHi": "FOAM = 6198 और LOAM = 4698 में O, A, M उभयनिष्ठ हैं (अंक 6, 9, 8)। केवल F से 1 और केवल L से 4 बचता है। अतः L = 4।"
         }
       ]
     },
@@ -431,4 +245,720 @@
             "ग्राम पंचायतों का संगठन (अनुच्छेद 40)",
             "नागरिकों के लिए समान नागरिक संहिता (अनुच्छेद 44)"
           ],
-          "ans
+          "ans": 1,
+          "solEn": "Article 46 directs the State to promote the educational and economic interests of SCs, STs and other weaker sections, which reflects the socialist aim of reducing inequality.",
+          "solHi": "अनुच्छेद 46 राज्य को अनुसूचित जातियों, जनजातियों व अन्य कमज़ोर वर्गों के शैक्षिक और आर्थिक हितों को बढ़ावा देने का निर्देश देता है, जो असमानता घटाने के समाजवादी लक्ष्य को दर्शाता है।"
+        },
+        {
+          "qEn": "Where was the first Lok Adalat camp in India held after independence?",
+          "qHi": "स्वतंत्रता के बाद भारत में पहला लोक अदालत शिविर कहाँ आयोजित किया गया था?",
+          "optEn": [
+            "Maharashtra",
+            "Tamil Nadu",
+            "Rajasthan",
+            "Gujarat"
+          ],
+          "optHi": [
+            "महाराष्ट्र",
+            "तमिलनाडु",
+            "राजस्थान",
+            "गुजरात"
+          ],
+          "ans": 3,
+          "solEn": "The first Lok Adalat camp after independence was held in Gujarat in 1982.",
+          "solHi": "आज़ादी के बाद पहला लोक अदालत शिविर 1982 में गुजरात में लगा था।"
+        },
+        {
+          "qEn": "Which two main leaders led the Santhal Rebellion?",
+          "qHi": "संथाल विद्रोह का नेतृत्व किन दो प्रमुख नेताओं ने किया था?",
+          "optEn": [
+            "Sidhu and Kanhu",
+            "Dudu Miyan and Ahmadullah",
+            "Birsa Munda and Trimbakji",
+            "Majnu Shah and Devi Chaudhurani"
+          ],
+          "optHi": [
+            "सिद्धू और कानू",
+            "दादू मियां और अहमदुल्लाह",
+            "बिरसा मुंडा और त्र्यंबकजी",
+            "मजनूम शाह और देवी चौधरानी"
+          ],
+          "ans": 0,
+          "solEn": "The Santhal Rebellion (1855–56) was led by the brothers Sidhu and Kanhu Murmu.",
+          "solHi": "संथाल विद्रोह (1855–56) का नेतृत्व भाइयों सिद्धू और कान्हू मुर्मू ने किया।"
+        },
+        {
+          "qEn": "In which of the following years was the Group of Monuments at Khajuraho declared a UNESCO World Heritage Site?",
+          "qHi": "खजुराहो के स्‍मारक समूह को निम्नलिखित में से किस वर्ष यूनेस्को विश्व धरोहर स्थल घोषित किया गया था?",
+          "optEn": [
+            "1946",
+            "1986",
+            "1980",
+            "1956"
+          ],
+          "optHi": [
+            "1946",
+            "1986",
+            "1980",
+            "1956"
+          ],
+          "ans": 1,
+          "solEn": "The Khajuraho Group of Monuments was inscribed as a UNESCO World Heritage Site in 1986.",
+          "solHi": "खजुराहो स्मारक समूह को 1986 में यूनेस्को विश्व धरोहर स्थल घोषित किया गया।"
+        },
+        {
+          "qEn": "Which system did the Balwant Rai Mehta Committee recommend for decentralisation?",
+          "qHi": "बलवंत राय मेहता समिति ने विकेंद्रीकरण के लिए किस व्यवस्था की सिफारिश की थी?",
+          "optEn": [
+            "Three-tier Panchayati Raj system",
+            "Centralised municipal governance system",
+            "Two-tier Panchayati Raj system",
+            "Only Zila Parishad system"
+          ],
+          "optHi": [
+            "त्रि-स्तरीय पंचायती राज व्यवस्था",
+            "केंद्रीकृत नगरपालिका शासन व्यवस्था",
+            "द्वि-स्तरीय पंचायती राज व्यवस्था",
+            "केवल जिला परिषद व्यवस्था"
+          ],
+          "ans": 0,
+          "solEn": "The Balwant Rai Mehta Committee (1957) recommended a three-tier Panchayati Raj system: Gram Panchayat, Panchayat Samiti and Zila Parishad.",
+          "solHi": "बलवंत राय मेहता समिति (1957) ने त्रिस्तरीय पंचायती राज व्यवस्था सुझाई: ग्राम पंचायत, पंचायत समिति और ज़िला परिषद।"
+        },
+        {
+          "qEn": "Which of the following dance forms is associated with Tamil Nadu?",
+          "qHi": "निम्नलिखित में से किस नृत्य शैली का संबंध तमिलनाडु से है?",
+          "optEn": [
+            "Kathak",
+            "Kuchipudi",
+            "Bharatanatyam",
+            "Mohiniyattam"
+          ],
+          "optHi": [
+            "कथक",
+            "कुचिपुड़ी",
+            "भरतनाट्यम",
+            "मोहिनीअट्टम"
+          ],
+          "ans": 2,
+          "solEn": "Bharatanatyam is the classical dance of Tamil Nadu. Kathak is from North India, Kuchipudi from Andhra Pradesh and Mohiniyattam from Kerala.",
+          "solHi": "भरतनाट्यम तमिलनाडु का शास्त्रीय नृत्य है। कथक उत्तर भारत का, कुचिपुड़ी आंध्र प्रदेश का और मोहिनीअट्टम केरल का है।"
+        },
+        {
+          "qEn": "Consider the following: Assertion (A): The windward side of the Western Ghats receives heavy rainfall. Reason (R): The leeward side of the Ghats lies in the rain-shadow region.",
+          "qHi": "निम्नलिखित पर विचार कीजिए: अभिकथन (A): पश्चिमी घाटों के पवनाभिमुख पार्श्‍व पर भारी वर्षा होती है। कारण (R): घाटों का प्रतिपवन पार्श्व, वृष्टि-छाया क्षेत्र में स्थित है।",
+          "optEn": [
+            "A is false, but R is true",
+            "A is true, but R is false",
+            "Both A and R are true, and R is the correct explanation of A",
+            "Both A and R are true, but R is not the correct explanation of A"
+          ],
+          "optHi": [
+            "A असत्य है, लेकिन R सत्य है",
+            "A सत्य है, लेकिन R असत्य है",
+            "A और R दोनों सत्य हैं, तथा R, A की सही व्याख्या है",
+            "A और R दोनों सत्य हैं, लेकिन R, A की सही व्याख्या नहीं है"
+          ],
+          "ans": 3,
+          "solEn": "A is true: moist winds are forced up the Western Ghats and shed heavy rain on the windward side. R is also true: the leeward side is a rain-shadow region. But the rain-shadow is a result of the windward rainfall, not its explanation, so R does not explain A.",
+          "solHi": "A सत्य है: नम हवाएँ पश्चिमी घाट पर चढ़कर पवनमुखी ढाल पर भारी वर्षा करती हैं। R भी सत्य है: पवनविमुख ढाल वृष्टिछाया क्षेत्र है। परंतु वृष्टिछाया पवनमुखी वर्षा का परिणाम है, कारण नहीं, इसलिए R, A की सही व्याख्या नहीं है।"
+        },
+        {
+          "qEn": "The Lotus Mahal, Queen’s Bath and Elephant Stables are architectural marvels belonging to which empire?",
+          "qHi": "कमल महल (Lotus Mahal), रानी का स्नानागार (Queen’s Bath) और हाथी के अस्तबल (Elephant Stables) किस साम्राज्य से संबंधित वास्तुशिल्प के अद्भुत उदाहरण हैं?",
+          "optEn": [
+            "Mughal Empire",
+            "Vijayanagara Empire",
+            "Delhi Sultanate",
+            "Rajput kingdoms"
+          ],
+          "optHi": [
+            "मुगल साम्राज्य",
+            "विजयनगर साम्राज्य",
+            "दिल्ली सल्तनत",
+            "राजपूत राज्य"
+          ],
+          "ans": 1,
+          "solEn": "The Lotus Mahal, Queen's Bath and Elephant Stables are monuments at Hampi, the capital of the Vijayanagara Empire.",
+          "solHi": "लोटस महल, रानी का स्नानागार और हाथी अस्तबल विजयनगर साम्राज्य की राजधानी हम्पी के स्मारक हैं।"
+        },
+        {
+          "qEn": "Match the following biosphere reserves with their respective states. Biosphere Reserve – State: A. Sundarbans 1. Tamil Nadu; B. Gulf of Mannar 2. West Bengal; C. Simlipal 3. Odisha; D. Nokrek 4. Meghalaya",
+          "qHi": "निम्नलिखित जैवमंडल अभयारण्यों को उनके संबंधित राज्यों से सुमेलित कीजिए। जैवमंडल अभयारण्य राज्य A. सुंदरबन 1. तमिलनाडु B. मन्नार की खाड़ी 2. पश्चिम बंगाल C. सिमलिपाल 3. ओडिशा D. नोकरेक 4. मेघालय",
+          "optEn": [
+            "A - 4, B - 3, C - 2, D - 1",
+            "A - 2, B - 1, C - 3, D - 4",
+            "A - 1, B - 2, C - 4, D - 3",
+            "A - 1, B - 2, C - 3, D - 4"
+          ],
+          "optHi": [
+            "A - 4, B - 3, C - 2, D - 1",
+            "A - 2, B - 1, C - 3, D - 4",
+            "A - 1, B - 2, C - 4, D - 3",
+            "A - 1, B - 2, C - 3, D - 4"
+          ],
+          "ans": 1,
+          "solEn": "Sundarbans – West Bengal (A-2), Gulf of Mannar – Tamil Nadu (B-1), Simlipal – Odisha (C-3), Nokrek – Meghalaya (D-4).",
+          "solHi": "सुंदरबन – पश्चिम बंगाल (A-2), मन्नार की खाड़ी – तमिलनाडु (B-1), सिमलीपाल – ओडिशा (C-3), नोकरेक – मेघालय (D-4)।"
+        },
+        {
+          "qEn": "Which coastal region lies in the middle part of the western coastal plain of India?",
+          "qHi": "भारत के पश्चिमी तटीय मैदान के मध्य भाग में कौन-सा तटीय क्षेत्र स्थित है?",
+          "optEn": [
+            "Coromandel Coast",
+            "Malabar Coast",
+            "Northern Circars",
+            "Kannad Plain"
+          ],
+          "optHi": [
+            "कोरोमंडल तट",
+            "मालाबार तट",
+            "उत्तरी सरकार",
+            "कन्नड़ मैदान"
+          ],
+          "ans": 3,
+          "solEn": "The western coastal plain has the Konkan coast in the north, the Kannad Plain in the middle and the Malabar coast in the south. Coromandel and Northern Circars are on the east coast.",
+          "solHi": "पश्चिमी तटीय मैदान में उत्तर में कोंकण तट, मध्य में कन्नड़ मैदान और दक्षिण में मालाबार तट है। कोरोमंडल और उत्तरी सरकार पूर्वी तट पर हैं।"
+        },
+        {
+          "qEn": "In which year was the 42nd Constitutional Amendment Act, which incorporated the Fundamental Duties into the Indian Constitution, adopted?",
+          "qHi": "भारतीय संविधान में मौलिक कर्तव्यों को समाविष्‍ट करने वाले 42वें संवैधानिक संशोधन अधिनियम को किस वर्ष अंगीकृत किया गया था?",
+          "optEn": [
+            "1958",
+            "1981",
+            "1976",
+            "1986"
+          ],
+          "optHi": [
+            "1958",
+            "1981",
+            "1976",
+            "1986"
+          ],
+          "ans": 2,
+          "solEn": "The 42nd Amendment Act was passed in 1976 and added the Fundamental Duties (Part IV-A, Article 51A).",
+          "solHi": "42वाँ संशोधन अधिनियम 1976 में पारित हुआ और इसने मौलिक कर्तव्य (भाग IV-क, अनुच्छेद 51क) जोड़े।"
+        },
+        {
+          "qEn": "Who among the following was the founder of the Delhi Sultanate and the first ruler of the Slave dynasty?",
+          "qHi": "दिल्ली सल्तनत का संस्थापक और गुलाम वंश का पहला शासक निम्नलिखित में से कौन था?",
+          "optEn": [
+            "Qutb-ud-din Aibak",
+            "Balban",
+            "Alauddin Khilji",
+            "Iltutmish"
+          ],
+          "optHi": [
+            "क़ु त़ुब-उद-दीन ऐबक",
+            "बलबन",
+            "अलाउद्दीन खिलजी",
+            "इल्तुतमिश"
+          ],
+          "ans": 0,
+          "solEn": "Qutb-ud-din Aibak founded the Delhi Sultanate in 1206 and was the first ruler of the Slave (Mamluk) dynasty.",
+          "solHi": "कुतुबुद्दीन ऐबक ने 1206 में दिल्ली सल्तनत की स्थापना की और वह गुलाम (ममलूक) वंश का पहला शासक था।"
+        },
+        {
+          "qEn": "The Deccan Traps of India are an example of which of the following volcanic types?",
+          "qHi": "भारत के दक्कन ट्रैप निम्नलिखित में से किस ज्वालामुखी श्रेणी के उदाहरण हैं?",
+          "optEn": [
+            "Cinder cone region",
+            "Flood basalt province",
+            "Caldera-type system",
+            "Composite cone region"
+          ],
+          "optHi": [
+            "सिंडर शंकु (Cinder cone) क्षेत्र",
+            "बाढ़ बेसाल्ट (Flood basalt) प्रांत",
+            "ज्वालामुखी कुं ड-प्रकार (Caldera-type) प्रणाली",
+            "मिश्रित शंकु (Composite cone) प्रदेश"
+          ],
+          "ans": 1,
+          "solEn": "The Deccan Traps were formed by massive lava flows that spread in sheets, a typical flood basalt province.",
+          "solHi": "दक्कन ट्रैप विशाल लावा प्रवाह से परतों में फैलकर बना है, जो बाढ़ बेसाल्ट प्रदेश का विशिष्ट उदाहरण है।"
+        },
+        {
+          "qEn": "Which of the following options correctly represents the first European power to establish a trading centre in India and the location of its settlement?",
+          "qHi": "निम्नलिखित में से कौन-सा विकल्प भारत में एक व्यापार के न्द्र स्थापित करने वाली पहली यूरोपीय शक्ति और उसके उपनिवेश (settlement) के स्थान का सही निरूपण करता है?",
+          "optEn": [
+            "Portuguese – Calicut",
+            "Dutch – Pulicat",
+            "British – Surat",
+            "French – Pondicherry"
+          ],
+          "optHi": [
+            "पुर्तगाली – कालीकट",
+            "डच – पुलिकट",
+            "ब्रिटिश – सूरत",
+            "फ्रें च – पोंडिचेरी"
+          ],
+          "ans": 0,
+          "solEn": "The Portuguese were the first Europeans to establish a trading centre; Vasco da Gama landed at Calicut in 1498.",
+          "solHi": "पुर्तगाली पहली यूरोपीय शक्ति थे जिन्होंने व्यापारिक केंद्र बनाया; वास्को डी गामा 1498 में कालीकट पहुँचा।"
+        },
+        {
+          "qEn": "Which group of soldiers was involved in the Vellore Mutiny of 1806?",
+          "qHi": "1806 के वेल्लोर विद्रोह में सैनिकों का कौन-सा समूह शामिल था?",
+          "optEn": [
+            "Sikh soldiers",
+            "Maratha soldiers",
+            "Sepoys of the Madras Army",
+            "Sepoys of the Bengal Army"
+          ],
+          "optHi": [
+            "सिख सैनिक",
+            "मराठा सैनिक",
+            "मद्रास सेना के सिपाही",
+            "बंगाल सेना के सिपाही"
+          ],
+          "ans": 2,
+          "solEn": "The Vellore Mutiny of 1806 was a revolt by sepoys of the Madras Army, mainly over new dress and turban regulations.",
+          "solHi": "1806 का वेल्लोर विद्रोह मद्रास सेना के सिपाहियों का विद्रोह था, जो मुख्यतः नए वेशभूषा और पगड़ी नियमों के कारण हुआ।"
+        },
+        {
+          "qEn": "Which of the following multipurpose projects of India is known for transforming a \"river of sorrow\" into a \"river of prosperity\"?",
+          "qHi": "भारत की निम्नलिखित बहुउद्देशीय परियोजनाओं में से किसे \"शोक की नदी\" से \"समृद्धि की नदी\" में परिवर्तन के रूप में जाना जाता है?",
+          "optEn": [
+            "Bhakra Nangal Project",
+            "Damodar Valley Project",
+            "Nagarjuna Sagar Project",
+            "Narmada Valley Development Project"
+          ],
+          "optHi": [
+            "भाखड़ा नांगल परियोजना",
+            "दामोदर घाटी परियोजना",
+            "नागार्जुन सागर परियोजना",
+            "नर्मदा घाटी विकास परियोजना"
+          ],
+          "ans": 1,
+          "solEn": "The Damodar river caused frequent floods in Bengal and Jharkhand and was called the 'river of sorrow'. The Damodar Valley Project turned it into a source of irrigation and power.",
+          "solHi": "दामोदर नदी बंगाल व झारखंड में बार-बार बाढ़ लाती थी और 'शोक की नदी' कहलाती थी। दामोदर घाटी परियोजना ने उसे सिंचाई व बिजली का स्रोत बना दिया।"
+        },
+        {
+          "qEn": "Match the following manufacturing industries in India with their locations. Manufacturing Industry – Location: a. Cotton textile industry 1. Coimbatore; b. Iron and steel plant 2. West Bengal; c. Automobile manufacturing 3. Chennai; d. Jute industry 4. Bhilai",
+          "qHi": "भारत में निम्नलिखित विनिर्माण उद्योगों को उनके स्थानों से सुमेलित कीजिए। विनिर्माण उद्योग स्थान a. सूती वस्त्र उद्योग 1. कोयंबटूर b. लौह और इस्पात संयंत्र 2. पश्चिम बंगाल c. ऑटोमोबाइल विनिर्माण 3. चेन्नई d. जूट उद्योग 4. भिलाई",
+          "optEn": [
+            "a-1, b-4, c-3, d-2",
+            "a-3, b-4, c-1, d-2",
+            "a-2, b-3, c-4, d-1",
+            "a-4, b-1, c-2, d-3"
+          ],
+          "optHi": [
+            "a-1, b-4, c-3, d-2",
+            "a-3, b-4, c-1, d-2",
+            "a-2, b-3, c-4, d-1",
+            "a-4, b-1, c-2, d-3"
+          ],
+          "ans": 0,
+          "solEn": "Cotton textile – Coimbatore (a-1), Iron and steel – Bhilai (b-4), Automobile – Chennai (c-3), Jute – West Bengal (d-2).",
+          "solHi": "सूती वस्त्र – कोयंबटूर (a-1), लौह-इस्पात – भिलाई (b-4), ऑटोमोबाइल – चेन्नई (c-3), जूट – पश्चिम बंगाल (d-2)।"
+        },
+        {
+          "qEn": "In the context of 18th-century India, what was the most significant immediate political consequence of the decline of Mughal authority?",
+          "qHi": "18वीं शताब्दी के भारत के संदर्भ में, मुगल सत्ता के पतन का सबसे महत्वपूर्ण तात्कालिक राजनीतिक परिणाम क्या था?",
+          "optEn": [
+            "Centralised governance",
+            "Foreign invasions",
+            "Regional autonomy",
+            "Economic growth"
+          ],
+          "optHi": [
+            "केंद्रीकृत शासन",
+            "विदेशी आक्रमण",
+            "क्षेत्रीय स्वायत्तता",
+            "आर्थिक संवृद्धि"
+          ],
+          "ans": 2,
+          "solEn": "As Mughal central power weakened in the 18th century, provincial governors and chiefs became effectively independent, giving rise to regional states such as Awadh, Bengal and Hyderabad.",
+          "solHi": "18वीं सदी में मुगल केंद्रीय सत्ता कमज़ोर होने पर प्रांतीय सूबेदार और सरदार लगभग स्वतंत्र हो गए, जिससे अवध, बंगाल और हैदराबाद जैसे क्षेत्रीय राज्य उभरे।"
+        }
+      ]
+    },
+    {
+      "name": "General Awareness (Part 2)",
+      "nameHi": "सामान्य जागरूकता (भाग 2)",
+      "questions": [
+        {
+          "qEn": "What is the most common source of energy in rural India?",
+          "qHi": "ग्रामीण भारत में ऊर्जा का सबसे आम स्रोत कौन-सा है?",
+          "optEn": [
+            "Solar energy",
+            "Firewood",
+            "Hydroelectricity",
+            "Natural gas"
+          ],
+          "optHi": [
+            "सौर ऊर्जा",
+            "काष्‍ठ ईधन",
+            "जलविद्युत",
+            "प्राकृतिक गैस"
+          ],
+          "ans": 1,
+          "solEn": "In rural India, firewood (biomass) remains the most common source of cooking energy.",
+          "solHi": "ग्रामीण भारत में खाना पकाने की ऊर्जा का सबसे आम स्रोत आज भी लकड़ी (बायोमास) है।"
+        },
+        {
+          "qEn": "Which of the following Indian chess players became the first Indian woman to reach the final of the FIDE Women’s World Cup?",
+          "qHi": "निम्नलिखित में से कौन-सी भारतीय शतरंज खिलाड़ी, FIDE महिला विश्व कप (FIDE Women’s World Cup) के फाइनल में पहुंचने वाली पहली भारतीय बनीं?",
+          "optEn": [
+            "Koneru Humpy",
+            "Harika Dronavalli",
+            "Divya Deshmukh",
+            "Vaishali Rameshbabu"
+          ],
+          "optHi": [
+            "कोनेरू हम्पी",
+            "हरिका द्रोणवल्ली",
+            "दिव्या देशमुख",
+            "वैशाली रमेशबाबू"
+          ],
+          "ans": 2,
+          "solEn": "Divya Deshmukh reached the final of the 2025 FIDE Women's World Cup (Batumi, Georgia), as per the answer key.",
+          "solHi": "उत्तर कुंजी के अनुसार, दिव्या देशमुख 2025 फ़िडे महिला विश्व कप (बटुमी, जॉर्जिया) के फ़ाइनल में पहुँचीं।"
+        },
+        {
+          "qEn": "In May 2025, who was awarded the Princess of Asturias Award for Sports?",
+          "qHi": "मई 2025 में, प्रिंसेस ऑफ अस्टुरियस अवार्ड फॉर स्पोर्ट्स (Princess of Asturias Award for Sports) किसे प्रदान किया गया?",
+          "optEn": [
+            "Roger Federer",
+            "Rafael Nadal",
+            "Naomi Osaka",
+            "Serena Williams"
+          ],
+          "optHi": [
+            "रोजर फे डरर (Roger Federer)",
+            "राफे ल नडाल (Rafael Nadal)",
+            "नाओमी ओसाका (Naomi Osaka)",
+            "सेरेना विलियम्स (Serena Williams)"
+          ],
+          "ans": 3,
+          "solEn": "The 2025 Princess of Asturias Award for Sports was announced in May 2025 and awarded to Serena Williams.",
+          "solHi": "2025 का प्रिंसेस ऑफ़ अस्टुरियस खेल पुरस्कार मई 2025 में घोषित हुआ और सेरेना विलियम्स को दिया गया।"
+        },
+        {
+          "qEn": "When and where was the World Governments Summit 2025 held?",
+          "qHi": "विश्व सरकार शिखर सम्मेलन 2025 कब और कहाँ आयोजित किया गया?",
+          "optEn": [
+            "20-22 April 2025, in Doha, Qatar",
+            "5-7 March 2025, in Abu Dhabi, UAE",
+            "11-13 February 2025, in Dubai, UAE",
+            "15-17 January 2025, in Riyadh, Saudi Arabia"
+          ],
+          "optHi": [
+            "20-22 अप्रैल 2025, दोहा, कतर में",
+            "5-7 मार्च 2025, अबू धाबी, संयुक्त अरब अमीरात में",
+            "11-13 फरवरी 2025, दुबई, संयुक्त अरब अमीरात में",
+            "15-17 जनवरी 2025, रियाद, सऊदी अरब में"
+          ],
+          "ans": 2,
+          "solEn": "The World Governments Summit 2025 was held on 11–13 February 2025 in Dubai, UAE.",
+          "solHi": "विश्व सरकार शिखर सम्मेलन 2025 दुबई (यूएई) में 11–13 फरवरी 2025 को हुआ।"
+        },
+        {
+          "qEn": "Which is the highest civilian award in the United States?",
+          "qHi": "यूनाइटेड स्टेट्स में सर्वोच्च नागरिक सम्मान पुरस्कार कौन-सा है?",
+          "optEn": [
+            "National Humanities Medal",
+            "Medal of Honor",
+            "Presidential Medal of Freedom",
+            "Congressional Gold Medal"
+          ],
+          "optHi": [
+            "नेशनल ह्यूमैनिटीज मेडल (National Humanities Medal)",
+            "मेडल ऑफ़ ऑनर (Medal of Honor)",
+            "प्रेसिडेंशियल मेडल ऑफ फ्रीडम (Presidential Medal of Freedom)",
+            "कॉन्ग्रेशनल गोल्ड मेडल (Congressional Gold Medal)"
+          ],
+          "ans": 2,
+          "solEn": "The Presidential Medal of Freedom is the highest civilian award of the United States, given by the President.",
+          "solHi": "प्रेसिडेंशियल मेडल ऑफ़ फ़्रीडम अमेरिका का सर्वोच्च नागरिक सम्मान है, जो राष्ट्रपति द्वारा दिया जाता है।"
+        },
+        {
+          "qEn": "Assertion (A): Armand Duplantis broke the pole vault world record in March 2025. Reason (R): He cleared a height of 6.27 metres at the All Star Perche event held in Clermont-Ferrand. Select the correct answer using the codes given below.",
+          "qHi": "अभिकथन (A): आर्मंड डुप्लांटिस ने मार्च 2025 में पोल वॉल्ट विश्व रिकॉर्ड तोड़ा था। कारण (R): उन्होंने क्लेरमोंट-फे रैंड में आयोजित ऑल स्टार पर्चे इवेंट (All Star Perche event) में 6.27 मीटर की ऊं चाई पार की थी। नीचे दिए गए कूटों का उपयोग करके सही उत्तर का चयन कीजिए।",
+          "optEn": [
+            "A is false, but R is true",
+            "Both A and R are true, but R is not the correct explanation of A",
+            "A is true, but R is false",
+            "Both A and R are true, and R is the correct explanation of A"
+          ],
+          "optHi": [
+            "A असत्य है, लेकिन R सत्य है",
+            "A और R दोनों सत्य हैं, लेकिन R, A की सही व्याख्या नहीं है",
+            "A सत्य है, लेकिन R असत्य है",
+            "A और R दोनों सत्य हैं, और R, A की सही व्याख्या है"
+          ],
+          "ans": 3,
+          "solEn": "Armand Duplantis set a new pole vault world record of 6.27 m in March 2025 at the All Star Perche event in Clermont-Ferrand. Both A and R are true, and R explains A.",
+          "solHi": "आर्मंड डुप्लांटिस ने मार्च 2025 में क्लेरमोंट-फ़ेरां के ऑल स्टार पर्श में 6.27 मीटर का नया पोल वॉल्ट विश्व रिकॉर्ड बनाया। A और R दोनों सत्य हैं और R, A की सही व्याख्या है।"
+        },
+        {
+          "qEn": "The 1991 reforms marked the shift from a state-controlled economy to a market-oriented economy. Which economist served as the Finance Minister during these reforms?",
+          "qHi": "1991 के सुधारों ने राज्य-नियंत्रित अर्थव्यवस्था से बाज़ार-उन्मुख अर्थव्यवस्था में बदलाव को चिह्नित किया। इन सुधारों के दौरान किस अर्थशास्त्री ने वित्त मंत्री के रूप में कार्य किया था?",
+          "optEn": [
+            "Manmohan Singh",
+            "Amartya Sen",
+            "Pranab Mukherjee",
+            "Yashwant Sinha"
+          ],
+          "optHi": [
+            "मनमोहन सिंह",
+            "अमर्त्य सेन",
+            "प्रणब मुखर्जी",
+            "यशवंत सिन्हा"
+          ],
+          "ans": 0,
+          "solEn": "Dr Manmohan Singh was India's Finance Minister (1991–96) under PM P. V. Narasimha Rao and led the 1991 economic reforms.",
+          "solHi": "डॉ. मनमोहन सिंह प्रधानमंत्री पी. वी. नरसिम्हा राव के अधीन वित्त मंत्री (1991–96) थे और उन्होंने 1991 के आर्थिक सुधारों का नेतृत्व किया।"
+        },
+        {
+          "qEn": "Under which Article of the Indian Constitution is the President empowered to declare a financial emergency?",
+          "qHi": "भारतीय संविधान के किस अनुच्छेद के अंतर्गत राष्ट्रपति को वित्तीय आपात घोषित करने का अधिकार प्राप्त है?",
+          "optEn": [
+            "Article 361",
+            "Article 356",
+            "Article 360",
+            "Article 352"
+          ],
+          "optHi": [
+            "अनुच्छेद 361",
+            "अनुच्छेद 356",
+            "अनुच्छेद 360",
+            "अनुच्छेद 352"
+          ],
+          "ans": 2,
+          "solEn": "Article 360 empowers the President to declare a financial emergency. Article 352 is national emergency and Article 356 is state emergency (President's Rule).",
+          "solHi": "अनुच्छेद 360 राष्ट्रपति को वित्तीय आपातकाल घोषित करने की शक्ति देता है। अनुच्छेद 352 राष्ट्रीय आपातकाल और 356 राज्य आपातकाल (राष्ट्रपति शासन) से संबंधित है।"
+        },
+        {
+          "qEn": "When was the 61st Munich Security Conference held in 2025?",
+          "qHi": "2025 में 61वां म्यूनिख सुरक्षा सम्मेलन (61st Munich Security Conference) का आयोजन कब किया गया?",
+          "optEn": [
+            "5-7 April",
+            "14-16 February",
+            "20-22 March",
+            "10-12 January"
+          ],
+          "optHi": [
+            "5-7 अप्रैल",
+            "14-16 फरवरी",
+            "20-22 मार्च",
+            "10-12 जनवरी"
+          ],
+          "ans": 1,
+          "solEn": "The 61st Munich Security Conference was held on 14–16 February 2025.",
+          "solHi": "61वाँ म्यूनिख सुरक्षा सम्मेलन 14–16 फरवरी 2025 को हुआ।"
+        },
+        {
+          "qEn": "Following the retirement of Professor Mamidala Jagadesh Kumar on 7 April 2025, who among the following was appointed as the acting Chairman of the UGC?",
+          "qHi": "7 अप्रैल, 2025 को प्रोफे सर मामिडाला जगदीश कुमार की सेवानिवृत्ति के बाद, निम्नलिखित में से किसे UGC के कार्यवाहक अध्यक्ष के रूप में नियुक्त किया गया था?",
+          "optEn": [
+            "Prof. Deepak Kumar Srivastava",
+            "Dr. Vineet Joshi",
+            "Archana Thakur",
+            "Prof. Manish R. Joshi"
+          ],
+          "optHi": [
+            "प्रो. दीपक कुमार श्रीवास्तव",
+            "डॉ. विनीत जोशी",
+            "अर्चना ठाकुर",
+            "प्रो. मनीष आर. जोशी"
+          ],
+          "ans": 1,
+          "solEn": "After Prof. M. Jagadesh Kumar retired on 7 April 2025, Dr Vineet Joshi was given charge as UGC Chairman.",
+          "solHi": "प्रो. एम. जगदीश कुमार के 7 अप्रैल 2025 को सेवानिवृत्त होने के बाद डॉ. विनीत जोशी को यूजीसी अध्यक्ष का कार्यभार सौंपा गया।"
+        },
+        {
+          "qEn": "In 2025, which state government launched the Smart Mosquito Surveillance System (SMoSS) to fight mosquito-borne diseases?",
+          "qHi": "2025 में, किस राज्य सरकार ने मच्छर जनित बीमारियों से लड़ने के लिए स्मार्ट मच्छर निगरानी प्रणाली (Smart Mosquito Surveillance System - SMoSS) शुरू की?",
+          "optEn": [
+            "Tamil Nadu",
+            "Bihar",
+            "Gujarat",
+            "Andhra Pradesh"
+          ],
+          "optHi": [
+            "तमिलनाडु",
+            "बिहार",
+            "गुजरात",
+            "आंध्र प्रदेश"
+          ],
+          "ans": 3,
+          "solEn": "As per the answer key, Andhra Pradesh launched the Smart Mosquito Surveillance System (SMoSS) in 2025 to fight mosquito-borne diseases.",
+          "solHi": "उत्तर कुंजी के अनुसार, 2025 में आंध्र प्रदेश ने मच्छर जनित रोगों से लड़ने के लिए स्मार्ट मॉस्किटो सर्विलांस सिस्टम (SMoSS) शुरू किया।"
+        },
+        {
+          "qEn": "What is the ascending order of acidity of HF, HCl, HBr and HI?",
+          "qHi": "HF, HCl, HBr और HI की अम्लता का आरोही क्रम क्या है?",
+          "optEn": [
+            "HF < HCl < HBr < HI",
+            "HF > HCl > HBr > HI",
+            "HF ~ HCl ~ HBr ~ HI",
+            "HBr > HCl > HI > HF"
+          ],
+          "optHi": [
+            "HF < HCl < HBr < HI",
+            "HF > HCl > HBr > HI",
+            "HF ~ HCl ~ HBr ~ HI",
+            "HBr > HCl > HI > HF"
+          ],
+          "ans": 0,
+          "solEn": "Down the halogen group the H–X bond gets weaker as the atom gets larger, so the acid strength rises: HF < HCl < HBr < HI.",
+          "solHi": "हैलोजन समूह में नीचे जाने पर परमाणु बड़ा होने से H–X बंध कमज़ोर होता है, इसलिए अम्लीयता बढ़ती है: HF < HCl < HBr < HI।"
+        },
+        {
+          "qEn": "What is the name of the summit focused on the media and entertainment industry, held in Mumbai in May 2025?",
+          "qHi": "मई 2025 में मुंबई में आयोजित, मीडिया और मनोरंजन उद्योग पर केंद्रित शिखर सम्मेलन का नाम क्या है?",
+          "optEn": [
+            "India Media Conclave",
+            "Bollywood Global Forum",
+            "WAVES Summit",
+            "Entertainment India Expo"
+          ],
+          "optHi": [
+            "इंडिया मीडिया कॉन्क्लेव (India Media Conclave)",
+            "बॉलीवुड ग्लोबल फोरम (Bollywood Global Forum)",
+            "वेव्स समिट (WAVES Summit)",
+            "एंटरटेनमेंट इंडिया एक्सपो (Entertainment India Expo)"
+          ],
+          "ans": 2,
+          "solEn": "The WAVES (World Audio Visual and Entertainment Summit) 2025 was held in Mumbai in May 2025.",
+          "solHi": "वेव्स (विश्व दृश्य-श्रव्य एवं मनोरंजन शिखर सम्मेलन) 2025 मई 2025 में मुंबई में हुआ।"
+        },
+        {
+          "qEn": "Which of the following missions marked ISRO’s 100th launch from Sriharikota in January 2025?",
+          "qHi": "निम्नलिखित में से कौन-सा मिशन, जनवरी 2025 में श्रीहरिकोटा से ISRO के 100वें प्रक्षेपण को चिह्नित करता है?",
+          "optEn": [
+            "GSLV-F14 / INSAT-3DS Mission",
+            "PSLV-C60 / SPADEX Mission",
+            "GSLV-F15 / NVS-02 Mission",
+            "SSLV-D3 / EOS-08 Mission"
+          ],
+          "optHi": [
+            "GSLV-F14 / INSAT-3DS मिशन",
+            "PSLV-C60 / SPADEX मिशन",
+            "GSLV-F15 / NVS-02 मिशन",
+            "SSLV-D3 / EOS-08 मिशन"
+          ],
+          "ans": 2,
+          "solEn": "ISRO's 100th launch from Sriharikota was GSLV-F15 carrying the NVS-02 navigation satellite on 29 January 2025.",
+          "solHi": "श्रीहरिकोटा से इसरो का 100वाँ प्रक्षेपण 29 जनवरी 2025 को GSLV-F15 द्वारा NVS-02 नौवहन उपग्रह का था।"
+        },
+        {
+          "qEn": "In the context of sustainable rural development, which of the following strategies is considered most effective for long-term poverty alleviation?",
+          "qHi": "संधारणीय ग्रामीण विकास के संदर्भ में, दीर्घकालिक गरीबी उन्मूलन के लिए निम्नलिखित में से कौन-सी रणनीति सर्वाधिक प्रभावी मानी जाती है?",
+          "optEn": [
+            "Promoting micro-enterprises through SHGs",
+            "Infrastructure development",
+            "Short-term employment generation",
+            "Direct cash transfers"
+          ],
+          "optHi": [
+            "SHGs के माध्यम से सूक्ष्म-उद्यमों को बढ़ावा देना",
+            "अवसंरचना विकास",
+            "अल्पकालिक रोजगार सृजन",
+            "प्रत्यक्ष नकद अंतरण"
+          ],
+          "ans": 0,
+          "solEn": "Promoting micro-enterprises through Self-Help Groups builds durable income and assets, so it reduces poverty over the long term better than short-term jobs or cash transfers.",
+          "solHi": "स्वयं सहायता समूहों के माध्यम से सूक्ष्म उद्यमों को बढ़ावा देने से स्थायी आय व संपत्ति बनती है, इसलिए यह अल्पकालिक रोज़गार या नकद हस्तांतरण की तुलना में दीर्घकालिक ग़रीबी घटाने में अधिक प्रभावी है।"
+        },
+        {
+          "qEn": "Which of the following equations correctly represents the restoring force exerted by a spring?",
+          "qHi": "निम्नलिखित में से कौन-सा समीकरण, स्प्रिंग द्वारा लगाए गए प्रत्यनयन बल (restoring force) को सही ढंग से निरूपित करता है?",
+          "optEn": [
+            "F = mg",
+            "F = − kx",
+            "F = kx",
+            "F = ma"
+          ],
+          "optHi": [
+            "F = mg",
+            "F = − kx",
+            "F = kx",
+            "F = ma"
+          ],
+          "ans": 1,
+          "solEn": "By Hooke's law the restoring force of a spring is F = −kx; the negative sign shows it acts opposite to the displacement.",
+          "solHi": "हुक के नियम से स्प्रिंग का प्रत्यानयन बल F = −kx होता है; ऋण चिह्न बताता है कि बल विस्थापन के विपरीत दिशा में है।"
+        },
+        {
+          "qEn": "In the absence of vasa recta in a juxtamedullary nephron, which of the following processes would be most affected?",
+          "qHi": "जक्स्टा-मेड्यूलरी नेफ्रॉन (juxta medullary nephron) में वासा रेक्टा (vasa recta) की अनुपस्थिति में, निम्नलिखित में से कौन-सी प्रक्रिया सबसे अधिक प्रभावित होगी?",
+          "optEn": [
+            "Counter-current mechanism for urine concentration",
+            "Active reabsorption of glucose",
+            "Filtration in the glomerulus",
+            "Secretion of potassium in the distal tubule"
+          ],
+          "optHi": [
+            "मूत्र सांद्रता (urine concentration) के लिए प्रतिधारा तंत्र",
+            "ग्लूकोज का सक्रिय पुनःअवशोषण",
+            "के शिकागुच्छ (glomerulus) में निस्यंदन",
+            "दूरस्थ नलिका में पोटैशियम का स्राव"
+          ],
+          "ans": 0,
+          "solEn": "The vasa recta maintains the medullary osmotic gradient used in the counter-current mechanism. Without it, the kidney cannot concentrate urine.",
+          "solHi": "वासा रेक्टा मेडुला में परासरणी प्रवणता बनाए रखता है, जो प्रति-धारा क्रियाविधि में काम आती है। इसके बिना मूत्र का सांद्रण नहीं हो सकता।"
+        },
+        {
+          "qEn": "In April 2025, which private company received an order worth ₹12,800 crore from the Nuclear Power Corporation of India Limited (NPCIL) for building two 700 MW nuclear reactors in Karnataka, a first in India?",
+          "qHi": "अप्रैल 2025 में, भारत में पहली बार, किस निजी कं पनी को कर्नाटक में दो 700 मेगावाट (MW) परमाणु रिएक्टरों के निर्माण के लिए न्यूक्लियर पावर कॉरपोरेशन ऑफ इंडिया लिमिटेड (NPCIL) से ₹12,800 करोड़ का ऑर्डर मिला था?",
+          "optEn": [
+            "Tata Power",
+            "Reliance Industries and Infrastructure Limited",
+            "Adani Power",
+            "Megha Engineering and Infrastructure Limited"
+          ],
+          "optHi": [
+            "टाटा पावर",
+            "रिलायंस इंडस्ट्रीज एंड इंफ्रास्ट्र्क्चर लिमिटेड",
+            "अडानी पवार",
+            "मेघा इंजीनियरिंग एंड इंफ्रास्ट्रक्चर लिमिटेड"
+          ],
+          "ans": 3,
+          "solEn": "As per the answer key, Megha Engineering and Infrastructure Limited received the ₹12,800 crore NPCIL order for two 700 MW reactors in Karnataka.",
+          "solHi": "उत्तर कुंजी के अनुसार, कर्नाटक में दो 700 MW रिएक्टर बनाने का ₹12,800 करोड़ का NPCIL ऑर्डर मेघा इंजीनियरिंग एंड इंफ्रास्ट्रक्चर लिमिटेड को मिला।"
+        },
+        {
+          "qEn": "Who won the 2024 Nobel Prize in Literature?",
+          "qHi": "साहित्य में 2024 का नोबेल पुरस्कार किसने जीता?",
+          "optEn": [
+            "Victor Ambros",
+            "John Jumper",
+            "Han Kang",
+            "David Baker"
+          ],
+          "optHi": [
+            "विक्टर एम्ब्रोस (Victor Ambros)",
+            "जॉन जम्पर (John Jumper)",
+            "हान कांग (Han Kang)",
+            "डेविड बेकर (David Baker)"
+          ],
+          "ans": 2,
+          "solEn": "The 2024 Nobel Prize in Literature was awarded to the South Korean author Han Kang.",
+          "solHi": "2024 का साहित्य का नोबेल पुरस्कार दक्षिण कोरियाई लेखिका हान कांग को मिला।"
+        },
+        {
+          "qEn": "The Seventh Five-Year Plan emphasised providing employment. What was the slogan that guided this objective?",
+          "qHi": "सातवीं पंचवर्षीय योजना में रोजगार उपलब्ध कराने पर जोर दिया गया। इस उद्देश्य को निर्देशित करने वाला नारा क्या था?",
+          "optEn": [
+            "Inclusive India",
+            "Food for All",
+            "Growth with Equity",
+            "Jobs First"
+          ],
+          "optHi": [
+            "समावेशी भारत (Inclusive India)",
+            "सभी के लिए भोजन (Food for All)",
+            "समता के साथ विकास (Growth with Equity)",
+            "रोजगार प्रथम (Jobs First)"
+          ],
+          "ans": 2,
+          "solEn": "As per the answer key, the slogan guiding the employment objective of the Seventh Five-Year Plan is 'Growth with Equity'.",
+          "solHi": "उत्तर कुंजी के अनुसार, सातवीं पंचवर्षीय योजना के रोज़गार उद्देश्य का मार्गदर्शक नारा 'समानता के साथ विकास' है।"
+        }
+      ]
+    }
+  ]
+}
