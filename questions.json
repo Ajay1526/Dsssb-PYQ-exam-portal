@@ -1,5 +1,5 @@
 {
-  "duration": 40,
+  "duration": 60,
   "neg": 0.25,
   "sections": [
     {
@@ -373,6 +373,62 @@
           "solHi": "भाग 2 प्रश्न 20 का विस्तृत हल।"
         }
       ]
-    }
-  ]
-}
+    },
+    {
+      "name": "General Awareness (Part 1)",
+      "nameHi": "सामान्य जागरूकता (भाग 1)",
+      "questions": [
+        {
+          "qEn": "Who among the following assassinated Curzon Wyllie?",
+          "qHi": "निम्नलिखित में से किसने कर्ज़न वायली (Curzon Wyllie) की हत्या की थी?",
+          "optEn": [
+            "Chandrashekhar Azad",
+            "Bhagat Singh",
+            "Madan Lal Dhingra",
+            "Vinayak Damodar Savarkar"
+          ],
+          "optHi": [
+            "चंद्रशेखर आजाद",
+            "भगत सिंह",
+            "मदन लाल ढींगरा",
+            "विनायक दामोदर सावरकर"
+          ],
+          "ans": 2,
+          "solEn": "Sir William Curzon Wyllie, political aide-de-camp to the Secretary of State for India, was shot in London in 1909 by Madan Lal Dhingra.",
+          "solHi": "सर विलियम कर्ज़न वायली की 1909 में लंदन में मदन लाल ढींगरा ने गोली मारकर हत्या की थी।"
+        },
+        {
+          "qEn": "Which Constitutional Amendment Bill resulted in the introduction of the Goods and Services Tax (GST) in India?",
+          "qHi": "किस संविधान संशोधन विधेयक के परिणामस्वरूप भारत में वस्तु एवं सेवा कर (GST) की शुरुआत हुई?",
+          "optEn": [
+            "103rd Amendment, 2019",
+            "101st Amendment, 2016",
+            "102nd Amendment, 2018",
+            "100th Amendment, 2015"
+          ],
+          "optHi": [
+            "103वें संशोधन, 2019",
+            "101वें संशोधन, 2016",
+            "102वें संशोधन, 2018",
+            "100वें संशोधन, 2015"
+          ],
+          "ans": 1,
+          "solEn": "GST was introduced through the 101st Constitutional Amendment Act, 2016 (effective 1 July 2017).",
+          "solHi": "GST 101वें संविधान संशोधन अधिनियम, 2016 से लागू हुआ (1 जुलाई 2017 से प्रभावी)।"
+        },
+        {
+          "qEn": "Which of the following Directive Principles of State Policy of the Indian Constitution reflects the socialist ideology inherent in the Constitution?",
+          "qHi": "भारतीय संविधान के निम्नलिखित राज्य के नीति निर्देशक सिद्धांतों में से कौन-सा, संविधान में अंतर्निहित समाजवादी विचारधारा को प्रतिबिंबित करता है?",
+          "optEn": [
+            "Separation of the judiciary from the executive (Article 50)",
+            "Promotion of educational and economic interests of weaker sections (Article 46)",
+            "Organisation of village panchayats (Article 40)",
+            "Uniform civil code for citizens (Article 44)"
+          ],
+          "optHi": [
+            "कार्यपालिका से न्यायपालिका का पृथक्करण (अनुच्छेद 50)",
+            "दुर्बल वर्गों के शिक्षा और अर्थ संबंधी हितों की अभिवृ‌द्धि (अनुच्छेद 46)",
+            "ग्राम पंचायतों का संगठन (अनुच्छेद 40)",
+            "नागरिकों के लिए समान नागरिक संहिता (अनुच्छेद 44)"
+          ],
+          "ans
