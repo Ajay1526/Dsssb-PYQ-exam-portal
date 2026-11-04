@@ -36,6 +36,7 @@ button.s{background:#33a6ea;color:#fff;border:0}
       <option value="unattempted">Unattempted</option>
     </select>
     <select id="lg" onchange="render()"><option value="en">English</option><option value="hi">हिंदी</option></select> 
+    <a href="javascript:void(0)" onclick="restartTest()" style="color:#ff6b6b; font-weight:bold;">🔄 Restart Test</a>
     <a href="index.html">← Exam Portal</a>
   </span>
 </div>
@@ -136,7 +137,7 @@ function render(){
   const bar=(x,cl)=>`<div class="bar ${cl}" style="width:${x/m*100}%"></div>`;
   
   o+=`<tr>
-    <td><b>${secName(s)}</b></td>
+    <td><a href="javascript:void(0)" onclick="scrollToSec(${i})" style="color:#33a6ea;text-decoration:underline;cursor:pointer;"><b>${secName(s)}</b></a></td>
     <td>${sScore}</td>
     <td><b>${sAcc}%</b></td>
     <td><span class="c">${sC}</span></td>
@@ -159,7 +160,7 @@ function render(){
   });
 
   if(filteredQs.length > 0) {
-   o+=`<div class="card"><h3>${L.q} – ${secName(s)}</h3><table><tr><th>${L.qn}</th><th>${L.st}</th><th>${L.you}</th><th>${L.topT}</th><th>${L.avT}</th><th></th></tr>`;
+   o+=`<div class="card" id="sec_block_${i}"><h3>${L.q} – ${secName(s)}</h3><table><tr><th>${L.qn}</th><th>${L.st}</th><th>${L.you}</th><th>${L.topT}</th><th>${L.avT}</th><th></th></tr>`;
    filteredQs.forEach(({x, originalIdx})=>{
     const j=originalIdx;
     const t=(top.sections && top.sections[i] && top.sections[i].q[j])?top.sections[i].q[j].t:0;
@@ -187,4 +188,41 @@ function solHTML(i,j,x,h,L){
  return `<div class="sol"><b>Q.${j+1}) ${(h?q.qHi:q.qEn).replace(/</g,'&lt;')}</b>${opts}<div style="margin-top:6px"><b>${L.ans}:</b> ${String.fromCharCode(65+q.ans)} &nbsp; <b>${L.your}:</b> ${x.a<0?L.none:String.fromCharCode(65+x.a)}</div>${sol?`<div style="margin-top:6px">${sol.replace(/</g,'&lt;')}</div>`:''}</div>`}
 
 function tog(i,j){const r=$('r'+i+'_'+j),b=$('b'+i+'_'+j),sh=r.style.display==='none';r.style.display=sh?'table-row':'none';b.textContent=sh?_L.hide:_L.sol}
-</script></body></html>
+
+function scrollToSec(i) {
+  // यह यूजर के इस प्रयास (Attempt) का डेटा सेव करके वापस index.html पर ले जाएगा
+  localStorage.setItem('resumeSection', i);
+  window.location.href = 'index.html?mode=review';
+}
+
+// 👉 इस 'restartTest' फंक्शन को इसके नीचे जोड़ दें:
+function restartTest() {
+  // कस्टम पॉप-अप दिखाएँ
+  document.getElementById('restartModal').style.display = 'flex';
+}
+
+function closeRestartModal() {
+  // पॉप-अप बंद करें
+  document.getElementById('restartModal').style.display = 'none';
+}
+
+function confirmRestart() {
+  // पुराना डेटा साफ़ करें और इंडेक्स पेज पर भेजें
+  localStorage.removeItem('examAttempts');
+  localStorage.removeItem('lastAttempt');
+  localStorage.removeItem('resumeSection');
+  window.location.href = 'index.html';
+}
+</script>
+  <!-- रीस्टार्ट कन्फर्मेशन के लिए कस्टम पॉप-अप बॉक्स -->
+<div id="restartModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; justify-content:center; align-items:center;">
+  <div style="background:#fff; padding:20px; border-radius:6px; width:300px; text-align:center; box-shadow:0 4px 8px rgba(0,0,0,0.2);">
+    <h4 style="margin-bottom:10px; color:#333;">रीस्टार्ट टेस्ट (Restart Test)</h4>
+    <p style="margin-bottom:20px; font-size:13px; color:#555;">क्या आप यह टेस्ट दोबारा देना चाहते हैं? पुराने उत्तर रीसेट हो जाएंगे और नया टेस्ट शुरू होगा।</p>
+    <div style="display:flex; justify-content:space-around;">
+      <button onclick="closeRestartModal()" style="background:#ccc; border:0; padding:6px 15px; border-radius:3px; cursor:pointer; font-weight:bold;">Cancel</button>
+      <button onclick="confirmRestart()" style="background:#d9534f; color:#fff; border:0; padding:6px 15px; border-radius:3px; cursor:pointer; font-weight:bold;">Yes, Restart</button>
+    </div>
+  </div>
+</div>
+</body></html>
