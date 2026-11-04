@@ -1,150 +1,376 @@
 {
-  "duration": 20,
+  "duration": 40,
   "neg": 0.25,
   "sections": [
     {
-      "name": "Reasoning & General",
-      "nameHi": "रीजनिंग और सामान्य प्रश्न",
+      "name": "General Intelligence and Reasoning (Part 1)",
+      "nameHi": "रीजनिंग और सामान्य प्रश्न (भाग 1)",
       "questions": [
         {
           "qEn": "This question is based on the five three-digit numbers given below. (Left) 691 453 852 657 518 (Right) (Example: 697 – 1st digit = 6, 2nd digit = 9, 3rd digit = 7) If the second digit of the second largest number is added to the third digit of the second smallest number, what will be the result?",
           "qHi": "यह प्रश्न नीचे दी गई तीन-अंकीय पाँच संख्याओं पर आधारित है। (बाएँ) 691 453 852 657 518 (दाएँ) (उदाहरण: 697 – पहला अंक = 6, दूसरा अंक = 9 और तीसरा अंक = 7) यदि दूसरी सबसे बड़ी संख्या के दूसरे अंक को दूसरी सबसे छोटी संख्या के तीसरे अंक में जोड़ा जाए, तो क्या परिणाम प्राप्त होगा?",
           "optEn": ["17", "14", "13", "16"],
           "optHi": ["17", "14", "13", "16"],
-          "ans": 0
+          "ans": 0,
+          "solEn": "Detailed solution for Q1.",
+          "solHi": "प्रश्न 1 का विस्तृत हल।"
         },
         {
           "qEn": "Refer to the series of letters and symbols given below and answer the question. Counting is to be done from left to right only. (Left) # E N % & D ? T & Q F # T & V % + P C G / (Right) How many letters are there, each of which is immediately preceded by a symbol and immediately followed by a letter?",
           "qHi": "नीचे दी गई अक्षर-प्रतीक श्रृंखला का संदर्भ लीजिए और दिए गए प्रश्न का उत्तर दीजिए। गिनती केवल बाएं से दाएं की जानी है। (बाएं) # E N % & D ? T & Q F # T & V % + P C G / (दाएं) ऐसे कितने अक्षर हैं, जिनमें से प्रत्येक के ठीक पहले एक प्रतीक और ठीक बाद में एक अक्षर है?",
           "optEn": ["Two", "One", "Three", "None"],
           "optHi": ["दो", "एक", "तीन", "एक भी नहीं"],
-          "ans": 2
+          "ans": 2,
+          "solEn": "Detailed solution for Q2.",
+          "solHi": "प्रश्न 2 का विस्तृत हल।"
         },
         {
           "qEn": "A, B, C, D, E, F and G are sitting around a circular table facing the centre. Counting from the left of C, only one person sits between A and C. G sits third to the right of E. D sits third to the left of F. G sits immediately to the right of D. B is not an immediate neighbour of D. Counting from the right of F, how many persons sit between D and F?",
           "qHi": "A, B, C, D, E, F और G एक गोल मेज के परितः केंद्र की ओर अभिमुख होकर बैठे हैं। C के बाईं ओर से गिनने पर, A और C के बीच केवल एक व्यक्ति बैठा है। G, E के दाईं ओर तीसरे स्थान पर बैठा है। D, F के बाईं ओर तीसरे स्थान पर बैठा है। G, D के ठीक दाईं ओर पड़ोस में बैठा है। B, D का निकटतम पड़ोसी नहीं है। F के दाईं ओर से गिनने पर, D और F के बीच कितने व्यक्ति बैठे हैं?",
           "optEn": ["1", "3", "4", "2"],
           "optHi": ["1", "3", "4", "2"],
-          "ans": 1
+          "ans": 1,
+          "solEn": "Detailed solution for Q3.",
+          "solHi": "प्रश्न 3 का विस्तृत हल।"
         },
         {
           "qEn": "Six friends H, I, J, K, C and D live on six different floors of the same building. The lowest floor is numbered 1, the one above it 2, and so on up to the topmost floor numbered 6. Only two persons live between J and D. Only two persons live between H and C. Only one person lives between I and C. I lives on floor 1. J lives above C. How many persons live between K and H?",
           "qHi": "छह मित्र H, I, J, K, C और D एक ही इमारत के छह अलग-अलग तलों पर रहते हैं। इमारत के सबसे निचले तल का क्रमांक 1 है, उसके ऊपर वाले तल का क्रमांक 2 है, और इसी तरह सबसे ऊपरी तल का क्रमांक 6 है। J और D के बीच केवल दो व्यक्ति रहते हैं। H और C के बीच भी केवल दो व्यक्ति रहते हैं। I और C के बीच केवल एक व्यक्ति रहता है। I पहले तल पर रहता है। J, C के ऊपर रहता है। K और H के बीच कितने व्यक्ति रहते हैं?",
           "optEn": ["Four", "Three", "Two", "One"],
           "optHi": ["चार", "तीन", "दो", "एक"],
-          "ans": 3
+          "ans": 3,
+          "solEn": "Detailed solution for Q4.",
+          "solHi": "प्रश्न 4 का विस्तृत हल।"
         },
         {
           "qEn": "In a certain code language, A + B means 'A is the daughter of B', A @ B means 'A is the father of B', A # B means 'A is the son of B', A ÷ B means 'A is the sister of B'. Based on the above, if 'M÷I+N@K#U', how is M related to U?",
           "qHi": "एक निश्चित कूट भाषा में, A + B का अर्थ है कि 'A, B की पुत्री है' A @ B का अर्थ है कि 'A, B का पिता है' A # B का अर्थ है कि 'A, B का पुत्र है' A ÷ B का अर्थ है कि 'A, B की बहन है' उपरोक्त के आधार पर, यदि 'M÷I+N@K#U' है, तो M का U से क्या संबंध है?",
           "optEn": ["Wife", "Daughter", "Mother", "Sister"],
           "optHi": ["पत्नी", "पुत्री", "माता", "बहन"],
-          "ans": 1
+          "ans": 1,
+          "solEn": "Detailed solution for Q5.",
+          "solHi": "प्रश्न 5 का विस्तृत हल।"
         },
         {
           "qEn": "If in the word BACKHAND each vowel is replaced by the letter immediately after it and each consonant is replaced by the letter immediately before it in English alphabetical order, which of the following letters will appear exactly three times in the new group of letters?",
           "qHi": "यदि शब्द BACKHAND में प्रत्येक स्वर को अंग्रेजी वर्णमाला क्रम में उसके ठीक बाद वाले अक्षर से बदल दिया जाए और प्रत्येक व्यंजन को अंग्रेजी वर्णमाला क्रम में उसके ठीक पहले वाले अक्षर से बदल दिया जाए, तो इस प्रकार बने अक्षरों के समूह में निम्नलिखित में से कौन-सा अक्षर ठीक तीन बार आएगा?",
           "optEn": ["G", "C", "B", "J"],
           "optHi": ["G", "C", "B", "J"],
-          "ans": 2
+          "ans": 2,
+          "solEn": "Detailed solution for Q6.",
+          "solHi": "प्रश्न 6 का विस्तृत हल।"
         },
         {
           "qEn": "R is the father of K. T is the mother of B. R is married to T. G is the brother of K. How is G related to B?",
           "qHi": "R, K का पिता है। T, B की माता है। R का विवाह T से हुआ है। G, K का भाई है। G का B से क्या संबंध है?",
           "optEn": ["Sister's husband", "Brother", "Father's brother", "Mother's father"],
           "optHi": ["बहन का पति", "भाई", "पिता का भाई", "माता का पिता"],
-          "ans": 1
+          "ans": 1,
+          "solEn": "Detailed solution for Q7.",
+          "solHi": "प्रश्न 7 का विस्तृत हल।"
         },
         {
           "qEn": "Based on English alphabetical order, IMPH is related to OSVN in a certain way. Similarly, DHKC is related to JNQI. Following the same logic, GKNF is related to which of the given options?",
           "qHi": "अंग्रेजी वर्णमाला क्रम के आधार पर एक निश्चित तरीके से IMPH का संबंध OSVN से है। उसी प्रकार, DHKC का संबंध JNQI से है। समान तर्क का अनुसरण करते हुए, GKNF का संबंध दिए गए विकल्पों में से किससे है?",
           "optEn": ["MQLT", "QMLT", "QMTL", "MQTL"],
           "optHi": ["MQLT", "QMLT", "QMTL", "MQTL"],
-          "ans": 3
+          "ans": 3,
+          "solEn": "Detailed solution for Q8.",
+          "solHi": "प्रश्न 8 का विस्तृत हल।"
         },
         {
           "qEn": "Refer to the following series and answer the question (all numbers are single-digit). Counting is to be done from left to right. (Left) 9 7 8 4 3 5 8 5 6 7 3 7 5 7 1 6 2 4 2 3 2 4 5 4 1 9 (Right) How many even digits are there, each of which is immediately preceded by an even digit and immediately followed by an odd digit?",
           "qHi": "निम्नलिखित श्रृंखला का संदर्भ लीजिए और प्रश्न का उत्तर दीजिए (सभी संख्याएँ केवल एक अंक वाली संख्याएँ हैं)। गिनती बाएँ से दाएँ की जानी चाहिए। (बाएँ) 9 7 8 4 3 5 8 5 6 7 3 7 5 7 1 6 2 4 2 3 2 4 5 4 1 9 (दाएँ) ऐसे कितने सम अंक हैं जिनमें से प्रत्येक के ठीक पहले एक सम अंक और ठीक बाद एक विषम अंक है?",
           "optEn": ["2", "5", "4", "3"],
           "optHi": ["2", "5", "4", "3"],
-          "ans": 3
+          "ans": 3,
+          "solEn": "Detailed solution for Q9.",
+          "solHi": "प्रश्न 9 का विस्तृत हल।"
         },
         {
           "qEn": "A, B, C, D, E and F live on six different floors of the same building. The lowest floor is numbered 1, the one above it 2, and so on up to the topmost floor numbered 6. Only four persons live between D and E. F lives on an even-numbered floor but not on floor 2. C lives immediately below B but above D. How many persons live between A and D?",
           "qHi": "A, B, C, D, E और F एक ही इमारत के छह विभिन्न तलों पर रहते हैं। इमारत के सबसे नीचे वाले तल का क्रमांक 1 है, उसके ऊपर वाले तल का क्रमांक 2 है, और इसी तरह सबसे ऊपर वाले तल का क्रमांक 6 है। D और E के बीच केवल चार व्यक्ति रहते हैं। F एक सम क्रमांक वाले तल पर रहता है, लेकिन तल क्रमांक 2 पर नहीं रहता है। C, B के ठीक नीचे रहता है लेकिन D के ऊपर रहता है। A और D के बीच कितने व्यक्ति रहते हैं?",
           "optEn": ["Three", "Two", "One", "Four"],
           "optHi": ["तीन", "दो", "एक", "चार"],
-          "ans": 0
+          "ans": 0,
+          "solEn": "Detailed solution for Q10.",
+          "solHi": "प्रश्न 10 का विस्तृत हल।"
         },
         {
           "qEn": "Seven boxes A, B, C, D, E, F and G are placed one above the other, not necessarily in the same order. Only five boxes are placed between C and E. F is placed third from the top. A is placed immediately above D but immediately below B. G is placed immediately above F but immediately below E. How many boxes are placed below D?",
           "qHi": "सात डिब्बे, A, B, C, D, E, F और G, एक-दूसरे के ऊपर रखे गए हैं, लेकिन जरूरी नहीं कि वे इसी क्रम में रखे गए हों। C और E के बीच केवल पांच डिब्बे रखे गए हैं। F को ऊपर से तीसरे स्थान पर रखा गया है। A को D के ठीक ऊपर लेकिन B के ठीक नीचे रखा गया है। G को F के ठीक ऊपर लेकिन E के ठीक नीचे रखा गया है। D के नीचे कितने डिब्बे रखे गए हैं?",
           "optEn": ["Two", "Four", "One", "Three"],
           "optHi": ["दो", "चार", "एक", "तीन"],
-          "ans": 2
+          "ans": 2,
+          "solEn": "Detailed solution for Q11.",
+          "solHi": "प्रश्न 11 का विस्तृत हल।"
         },
         {
           "qEn": "By which letter-clusters should # and % be replaced so that the pattern and relationship between the pair on the left of :: is the same as that between the pair on the right of ::? # : GAD :: PCW : %",
           "qHi": "निम्नलिखित में से किस अक्षर-समूह द्वारा # और % को प्रतिस्थापित किया जाना चाहिए ताकि :: के बाईं ओर के अक्षर-समूह युग्म के बीच अनुसरण किया गया पैटर्न और संबंध, :: के दाईं ओर के अक्षर-समूह युग्म के बीच अनुसरण किए गए पैटर्न और संबंध के समान हो? # : GAD :: PCW : %",
           "optEn": ["# = DZB , % = SEY", "# = DYA , % = SEY", "# = DYA , % = SEZ", "# = DYB , % = SEZ"],
           "optHi": ["# = DZB , % = SEY", "# = DYA , % = SEY", "# = DYA , % = SEZ", "# = DYB , % = SEZ"],
-          "ans": 2
+          "ans": 2,
+          "solEn": "Detailed solution for Q12.",
+          "solHi": "प्रश्न 12 का विस्तृत हल।"
         },
         {
           "qEn": "Refer to the following letter-symbol series and answer the question. Counting is to be done from left to right only. (Left) $ G Z > W J & C U F Z # N B L % < @ U Z (Right) If all the letters are removed from the series, which element will be fourth from the left?",
           "qHi": "निम्नलिखित अक्षर-प्रतीक श्रृंखला का संदर्भ लीजिए और उसके बाद दिए गए प्रश्न का उत्तर दीजिए। गिनती केवल बाएं से दाएं ही की जानी है। (बाएं) $ G Z > W J & C U F Z # N B L % < @ U Z (दाएं) यदि सभी अक्षरों को श्रृंखला से हटा दिया जाए, तो कौन-सा अवयव बाएं से चौथा होगा?",
           "optEn": ["%", "#", ">", "$"],
           "optHi": ["%", "#", ">", "$"],
-          "ans": 1
+          "ans": 1,
+          "solEn": "Detailed solution for Q13.",
+          "solHi": "प्रश्न 13 का विस्तृत हल।"
         },
         {
           "qEn": "This question is based on the five three-digit numbers given below. (Left) 249 237 354 745 428 (Right) (Example: 697 – 1st digit = 6, 2nd digit = 9, 3rd digit = 7) If the third digit of the largest number is added to the third digit of the smallest number, what will be the result?",
           "qHi": "यह प्रश्न नीचे दी गई तीन अंकों वाली पाँच संख्याओं पर आधारित है। (बाएँ) 249 237 354 745 428 (दाएँ) (उदाहरण: 697 – पहला अंक = 6, दूसरा अंक = 9 और तीसरा अंक = 7) यदि सबसे बड़ी संख्या के तीसरे अंक को सबसे छोटी संख्या के तीसरे अंक में जोड़ा जाए, तो क्या परिणाम प्राप्त होगा?",
           "optEn": ["13", "10", "12", "11"],
           "optHi": ["13", "10", "12", "11"],
-          "ans": 2
+          "ans": 2,
+          "solEn": "Detailed solution for Q14.",
+          "solHi": "प्रश्न 14 का विस्तृत हल।"
         },
         {
           "qEn": "Select the triad that follows the same pattern as the two triads given below. Both triads follow the same pattern. JE-LH-OR LG-NJ-QT",
           "qHi": "उस त्रिक का चयन कीजिए, जो नीचे दिए गए दो त्रिकों के समान पैटर्न का अनुसरण करता है। दोनों त्रिक समान पैटर्न का अनुसरण करते हैं। JE-LH-OR LG-NJ-QT",
           "optEn": ["NI-PL-SV", "NI-PL-SU", "MI-PL-SU", "MI-OL-SU"],
           "optHi": ["NI-PL-SV", "NI-PL-SU", "MI-PL-SU", "MI-OL-SU"],
-          "ans": 0
+          "ans": 0,
+          "solEn": "Detailed solution for Q15.",
+          "solHi": "प्रश्न 15 का विस्तृत हल।"
         },
         {
           "qEn": "Seven boxes Q, R, S, T, G, H and I are placed one above the other, not necessarily in the same order. Only one box is placed above I. Only three boxes are placed between T and I. S is placed somewhere below T. Only H is placed between I and Q. G is placed somewhere above I. How many boxes are placed between S and I?",
           "qHi": "सात डिब्बे, Q, R, S, T, G, H और I, एक के ऊपर एक रखे गए हैं, लेकिन जरूरी नहीं कि इसी क्रम में हों। I के ऊपर केवल एक डिब्बा रखा गया है। T और I के बीच केवल तीन डिब्बे रखे गए हैं। S को T के नीचे किसी एक स्थान पर रखा गया है। I और Q के बीच केवल H को रखा गया है। G को I के ऊपर किसी एक स्थान पर रखा गया है। S और I के बीच कितने डिब्बे रखे गए हैं?",
           "optEn": ["One", "Two", "Three", "Four"],
           "optHi": ["एक", "दो", "तीन", "चार"],
-          "ans": 3
+          "ans": 3,
+          "solEn": "Detailed solution for Q16.",
+          "solHi": "प्रश्न 16 का विस्तृत हल।"
         },
         {
           "qEn": "Refer to the following number and symbol series and answer the question. All numbers are single-digit numbers. Counting is to be done from left to right only. (Left) 5 6 7 8 9 4 3 @ # $ 5 7 % ^ 7 4 # 2 5 (Right) How many symbols are there, each of which is immediately preceded by a number and immediately followed by a number?",
           "qHi": "निम्नलिखित संख्या और प्रतीक श्रृंखला का संदर्भ लीजिए और नीचे दिए गए प्रश्न का उत्तर दीजिए। सभी संख्याएं केवल एक-अंकीय संख्याएं हैं। गिनती केवल बाएं से दाएं की जानी है। (बाएं) 5 6 7 8 9 4 3 @ # $ 5 7 % ^ 7 4 # 2 5 (दाएं) ऐसे कितने प्रतीक हैं जिनमें से प्रत्येक के ठीक पहले एक संख्या है और ठीक बाद में भी एक संख्या है?",
           "optEn": ["One", "Two", "None", "Three"],
           "optHi": ["एक", "दो", "एक भी नहीं", "तीन"],
-          "ans": 0
+          "ans": 0,
+          "solEn": "Detailed solution for Q17.",
+          "solHi": "प्रश्न 17 का विस्तृत हल।"
         },
         {
           "qEn": "In a certain code language, A + B means 'A is the sister of B', A – B means 'A is the brother of B', A x B means 'A is the mother of B', A ÷ B means 'A is the father of B'. Based on the above, if 'Y ÷ F – B x S + R', how is Y related to R?",
           "qHi": "एक निश्चित कूट भाषा में, A + B का अर्थ है कि 'A, B की बहन है' A – B का अर्थ है कि 'A, B का भाई है' A x B का अर्थ है कि 'A, B की माता है' A ÷ B का अर्थ है कि 'A, B का पिता है' उपरोक्त के आधार पर, यदि 'Y ÷ F – B x S + R' है, तो Y का R से क्या संबंध है?",
           "optEn": ["Mother's father", "Father's father", "Father's mother", "Mother's mother"],
           "optHi": ["माता का पिता", "पिता का पिता", "पिता की माता", "माता की माता"],
-          "ans": 0
+          "ans": 0,
+          "solEn": "Detailed solution for Q18.",
+          "solHi": "प्रश्न 18 का विस्तृत हल।"
         },
         {
           "qEn": "Seven persons A, B, C, D, E, F and G are sitting in a straight line facing north. No one sits to the left of G. Only four persons sit between D and B. A sits second to the right of B. C is the immediate neighbour of both E and A. How many persons sit between G and C?",
           "qHi": "सात व्यक्ति A, B, C, D, E, F और G उत्तर की ओर अभिमुख होकर एक सीधी पंक्ति में बैठे हैं। G के बाईं ओर कोई नहीं बैठा है। D और B के बीच केवल चार व्यक्ति बैठे हैं। A, B के दाईं ओर दूसरे स्थान पर बैठा है। E और A का निकटतम पड़ोसी C है। G और C के बीच कितने व्यक्ति बैठे हैं?",
           "optEn": ["Two", "Three", "Five", "One"],
           "optHi": ["दो", "तीन", "पांच", "एक"],
-          "ans": 1
+          "ans": 1,
+          "solEn": "Detailed solution for Q19.",
+          "solHi": "प्रश्न 19 का विस्तृत हल।"
         },
         {
           "qEn": "In a certain code language, 'FOAM' is coded as '6198' and 'LOAM' is coded as '4698'. What is the code for 'L' in the given code language?",
           "qHi": "किसी निश्चित कूट भाषा में, 'FOAM' को '6198' के रूप में कूटबद्ध किया जाता है और 'LOAM' को '4698' के रूप में कूटबद्ध किया जाता है। दी गई कूट भाषा में 'L' का कूट क्या है?",
           "optEn": ["1", "4", "9", "6"],
           "optHi": ["1", "4", "9", "6"],
-          "ans": 1
+          "ans": 1,
+          "solEn": "Detailed solution for Q20.",
+          "solHi": "प्रश्न 20 का विस्तृत हल।"
+        }
+      ]
+    },
+    {
+      "name": "General Intelligence and Reasoning (Part 2)",
+      "nameHi": "रीजनिंग और सामान्य प्रश्न (भाग 2)",
+      "questions": [
+        {
+          "qEn": "This question is based on the five three-digit numbers given below. (Left) 691 453 852 657 518 (Right) (Example: 697 – 1st digit = 6, 2nd digit = 9, 3rd digit = 7) If the second digit of the second largest number is added to the third digit of the second smallest number, what will be the result?",
+          "qHi": "यह प्रश्न नीचे दी गई तीन-अंकीय पाँच संख्याओं पर आधारित है। (बाएँ) 691 453 852 657 518 (दाएँ) (उदाहरण: 697 – पहला अंक = 6, दूसरा अंक = 9 और तीसरा अंक = 7) यदि दूसरी सबसे बड़ी संख्या के दूसरे अंक को दूसरी सबसे छोटी संख्या के तीसरे अंक में जोड़ा जाए, तो क्या परिणाम प्राप्त होगा?",
+          "optEn": ["17", "14", "13", "16"],
+          "optHi": ["17", "14", "13", "16"],
+          "ans": 0,
+          "solEn": "Detailed solution for Section 2 Q1.",
+          "solHi": "भाग 2 प्रश्न 1 का विस्तृत हल।"
+        },
+        {
+          "qEn": "Refer to the series of letters and symbols given below and answer the question. Counting is to be done from left to right only. (Left) # E N % & D ? T & Q F # T & V % + P C G / (Right) How many letters are there, each of which is immediately preceded by a symbol and immediately followed by a letter?",
+          "qHi": "नीचे दी गई अक्षर-प्रतीक श्रृंखला का संदर्भ लीजिए और दिए गए प्रश्न का उत्तर दीजिए। गिनती केवल बाएं से दाएं की जानी है। (बाएं) # E N % & D ? T & Q F # T & V % + P C G / (दाएं) ऐसे कितने अक्षर हैं, जिनमें से प्रत्येक के ठीक पहले एक प्रतीक और ठीक बाद में एक अक्षर है?",
+          "optEn": ["Two", "One", "Three", "None"],
+          "optHi": ["दो", "एक", "तीन", "एक भी नहीं"],
+          "ans": 2,
+          "solEn": "Detailed solution for Section 2 Q2.",
+          "solHi": "भाग 2 प्रश्न 2 का विस्तृत हल।"
+        },
+        {
+          "qEn": "A, B, C, D, E, F and G are sitting around a circular table facing the centre. Counting from the left of C, only one person sits between A and C. G sits third to the right of E. D sits third to the left of F. G sits immediately to the right of D. B is not an immediate neighbour of D. Counting from the right of F, how many persons sit between D and F?",
+          "qHi": "A, B, C, D, E, F और G एक गोल मेज के परितः केंद्र की ओर अभिमुख होकर बैठे हैं। C के बाईं ओर से गिनने पर, A और C के बीच केवल एक व्यक्ति बैठा है। G, E के दाईं ओर तीसरे स्थान पर बैठा है। D, F के बाईं ओर तीसरे स्थान पर बैठा है। G, D के ठीक दाईं ओर पड़ोस में बैठा है। B, D का निकटतम पड़ोसी नहीं है। F के दाईं ओर से गिनने पर, D और F के बीच कितने व्यक्ति बैठे हैं?",
+          "optEn": ["1", "3", "4", "2"],
+          "optHi": ["1", "3", "4", "2"],
+          "ans": 1,
+          "solEn": "Detailed solution for Section 2 Q3.",
+          "solHi": "भाग 2 प्रश्न 3 का विस्तृत हल।"
+        },
+        {
+          "qEn": "Six friends H, I, J, K, C and D live on six different floors of the same building. The lowest floor is numbered 1, the one above it 2, and so on up to the topmost floor numbered 6. Only two persons live between J and D. Only two persons live between H and C. Only one person lives between I and C. I lives on floor 1. J lives above C. How many persons live between K and H?",
+          "qHi": "छह मित्र H, I, J, K, C और D एक ही इमारत के छह अलग-अलग तलों पर रहते हैं। इमारत के सबसे निचले तल का क्रमांक 1 है, उसके ऊपर वाले तल का क्रमांक 2 है, और इसी तरह सबसे ऊपरी तल का क्रमांक 6 है। J और D के बीच केवल दो व्यक्ति रहते हैं। H और C के बीच भी केवल दो व्यक्ति रहते हैं। I और C के बीच केवल एक व्यक्ति रहता है। I पहले तल पर रहता है। J, C के ऊपर रहता है। K और H के बीच कितने व्यक्ति रहते हैं?",
+          "optEn": ["Four", "Three", "Two", "One"],
+          "optHi": ["चार", "तीन", "दो", "एक"],
+          "ans": 3,
+          "solEn": "Detailed solution for Section 2 Q4.",
+          "solHi": "भाग 2 प्रश्न 4 का विस्तृत हल।"
+        },
+        {
+          "qEn": "In a certain code language, A + B means 'A is the daughter of B', A @ B means 'A is the father of B', A # B means 'A is the son of B', A ÷ B means 'A is the sister of B'. Based on the above, if 'M÷I+N@K#U', how is M related to U?",
+          "qHi": "एक निश्चित कूट भाषा में, A + B का अर्थ है कि 'A, B की पुत्री है' A @ B का अर्थ है कि 'A, B का पिता है' A # B का अर्थ है कि 'A, B का पुत्र है' A ÷ B का अर्थ है कि 'A, B की बहन है' उपरोक्त के आधार पर, यदि 'M÷I+N@K#U' है, तो M का U से क्या संबंध है?",
+          "optEn": ["Wife", "Daughter", "Mother", "Sister"],
+          "optHi": ["पत्नी", "पुत्री", "माता", "बहन"],
+          "ans": 1,
+          "solEn": "Detailed solution for Section 2 Q5.",
+          "solHi": "भाग 2 प्रश्न 5 का विस्तृत हल।"
+        },
+        {
+          "qEn": "If in the word BACKHAND each vowel is replaced by the letter immediately after it and each consonant is replaced by the letter immediately before it in English alphabetical order, which of the following letters will appear exactly three times in the new group of letters?",
+          "qHi": "यदि शब्द BACKHAND में प्रत्येक स्वर को अंग्रेजी वर्णमाला क्रम में उसके ठीक बाद वाले अक्षर से बदल दिया जाए और प्रत्येक व्यंजन को अंग्रेजी वर्णमाला क्रम में उसके ठीक पहले वाले अक्षर से बदल दिया जाए, तो इस प्रकार बने अक्षरों के समूह में निम्नलिखित में से कौन-सा अक्षर ठीक तीन बार आएगा?",
+          "optEn": ["G", "C", "B", "J"],
+          "optHi": ["G", "C", "B", "J"],
+          "ans": 2,
+          "solEn": "Detailed solution for Section 2 Q6.",
+          "solHi": "भाग 2 प्रश्न 6 का विस्तृत हल।"
+        },
+        {
+          "qEn": "R is the father of K. T is the mother of B. R is married to T. G is the brother of K. How is G related to B?",
+          "qHi": "R, K का पिता है। T, B की माता है। R का विवाह T से हुआ है। G, K का भाई है। G का B से क्या संबंध है?",
+          "optEn": ["Sister's husband", "Brother", "Father's brother", "Mother's father"],
+          "optHi": ["बहन का पति", "भाई", "पिता का भाई", "माता का पिता"],
+          "ans": 1,
+          "solEn": "Detailed solution for Section 2 Q7.",
+          "solHi": "भाग 2 प्रश्न 7 का विस्तृत हल।"
+        },
+        {
+          "qEn": "Based on English alphabetical order, IMPH is related to OSVN in a certain way. Similarly, DHKC is related to JNQI. Following the same logic, GKNF is related to which of the given options?",
+          "qHi": "अंग्रेजी वर्णमाला क्रम के आधार पर एक निश्चित तरीके से IMPH का संबंध OSVN से है। उसी प्रकार, DHKC का संबंध JNQI से है। समान तर्क का अनुसरण करते हुए, GKNF का संबंध दिए गए विकल्पों में से किससे है?",
+          "optEn": ["MQLT", "QMLT", "QMTL", "MQTL"],
+          "optHi": ["MQLT", "QMLT", "QMTL", "MQTL"],
+          "ans": 3,
+          "solEn": "Detailed solution for Section 2 Q8.",
+          "solHi": "भाग 2 प्रश्न 8 का विस्तृत हल।"
+        },
+        {
+          "qEn": "Refer to the following series and answer the question (all numbers are single-digit). Counting is to be done from left to right. (Left) 9 7 8 4 3 5 8 5 6 7 3 7 5 7 1 6 2 4 2 3 2 4 5 4 1 9 (Right) How many even digits are there, each of which is immediately preceded by an even digit and immediately followed by an odd digit?",
+          "qHi": "निम्नलिखित श्रृंखला का संदर्भ लीजिए और प्रश्न का उत्तर दीजिए (सभी संख्याएँ केवल एक अंक वाली संख्याएँ हैं)। गिनती बाएँ से दाएँ की जानी चाहिए। (बाएँ) 9 7 8 4 3 5 8 5 6 7 3 7 5 7 1 6 2 4 2 3 2 4 5 4 1 9 (दाएँ) ऐसे कितने सम अंक हैं जिनमें से प्रत्येक के ठीक पहले एक सम अंक और ठीक बाद एक विषम अंक है?",
+          "optEn": ["2", "5", "4", "3"],
+          "optHi": ["2", "5", "4", "3"],
+          "ans": 3,
+          "solEn": "Detailed solution for Section 2 Q9.",
+          "solHi": "भाग 2 प्रश्न 9 का विस्तृत हल।"
+        },
+        {
+          "qEn": "A, B, C, D, E and F live on six different floors of the same building. The lowest floor is numbered 1, the one above it 2, and so on up to the topmost floor numbered 6. Only four persons live between D and E. F lives on an even-numbered floor but not on floor 2. C lives immediately below B but above D. How many persons live between A and D?",
+          "qHi": "A, B, C, D, E और F एक ही इमारत के छह विभिन्न तलों पर रहते हैं। इमारत के सबसे नीचे वाले तल का क्रमांक 1 है, उसके ऊपर वाले तल का क्रमांक 2 है, और इसी तरह सबसे ऊपर वाले तल का क्रमांक 6 है। D और E के बीच केवल चार व्यक्ति रहते हैं। F एक सम क्रमांक वाले तल पर रहता है, लेकिन तल क्रमांक 2 पर नहीं रहता है। C, B के ठीक नीचे रहता है लेकिन D के ऊपर रहता है। A और D के बीच कितने व्यक्ति रहते हैं?",
+          "optEn": ["Three", "Two", "One", "Four"],
+          "optHi": ["तीन", "दो", "एक", "चार"],
+          "ans": 0,
+          "solEn": "Detailed solution for Section 2 Q10.",
+          "solHi": "भाग 2 प्रश्न 10 का विस्तृत हल।"
+        },
+        {
+          "qEn": "Seven boxes A, B, C, D, E, F and G are placed one above the other, not necessarily in the same order. Only five boxes are placed between C and E. F is placed third from the top. A is placed immediately above D but immediately below B. G is placed immediately above F but immediately below E. How many boxes are placed below D?",
+          "qHi": "सात डिब्बे, A, B, C, D, E, F और G, एक-दूसरे के ऊपर रखे गए हैं, लेकिन जरूरी नहीं कि वे इसी क्रम में रखे गए हों। C और E के बीच केवल पांच डिब्बे रखे गए हैं। F को ऊपर से तीसरे स्थान पर रखा गया है। A को D के ठीक ऊपर लेकिन B के ठीक नीचे रखा गया है। G को F के ठीक ऊपर लेकिन E के ठीक नीचे रखा गया है। D के नीचे कितने डिब्बे रखे गए हैं?",
+          "optEn": ["Two", "Four", "One", "Three"],
+          "optHi": ["दो", "चार", "एक", "तीन"],
+          "ans": 2,
+          "solEn": "Detailed solution for Section 2 Q11.",
+          "solHi": "भाग 2 प्रश्न 11 का विस्तृत हल।"
+        },
+        {
+          "qEn": "By which letter-clusters should # and % be replaced so that the pattern and relationship between the pair on the left of :: is the same as that between the pair on the right of ::? # : GAD :: PCW : %",
+          "qHi": "निम्नलिखित में से किस अक्षर-समूह द्वारा # और % को प्रतिस्थापित किया जाना चाहिए ताकि :: के बाईं ओर के अक्षर-समूह युग्म के बीच अनुसरण किया गया पैटर्न और संबंध, :: के दाईं ओर के अक्षर-समूह युग्म के बीच अनुसरण किए गए पैटर्न और संबंध के समान हो? # : GAD :: PCW : %",
+          "optEn": ["# = DZB , % = SEY", "# = DYA , % = SEY", "# = DYA , % = SEZ", "# = DYB , % = SEZ"],
+          "optHi": ["# = DZB , % = SEY", "# = DYA , % = SEY", "# = DYA , % = SEZ", "# = DYB , % = SEZ"],
+          "ans": 2,
+          "solEn": "Detailed solution for Section 2 Q12.",
+          "solHi": "भाग 2 प्रश्न 12 का विस्तृत हल।"
+        },
+        {
+          "qEn": "Refer to the following letter-symbol series and answer the question. Counting is to be done from left to right only. (Left) $ G Z > W J & C U F Z # N B L % < @ U Z (Right) If all the letters are removed from the series, which element will be fourth from the left?",
+          "qHi": "निम्नलिखित अक्षर-प्रतीक श्रृंखला का संदर्भ लीजिए और उसके बाद दिए गए प्रश्न का उत्तर दीजिए। गिनती केवल बाएं से दाएं ही की जानी है। (बाएं) $ G Z > W J & C U F Z # N B L % < @ U Z (दाएं) यदि सभी अक्षरों को श्रृंखला से हटा दिया जाए, तो कौन-सा अवयव बाएं से चौथा होगा?",
+          "optEn": ["%", "#", ">", "$"],
+          "optHi": ["%", "#", ">", "$"],
+          "ans": 1,
+          "solEn": "Detailed solution for Section 2 Q13.",
+          "solHi": "भाग 2 प्रश्न 13 का विस्तृत हल।"
+        },
+        {
+          "qEn": "This question is based on the five three-digit numbers given below. (Left) 249 237 354 745 428 (Right) (Example: 697 – 1st digit = 6, 2nd digit = 9, 3rd digit = 7) If the third digit of the largest number is added to the third digit of the smallest number, what will be the result?",
+          "qHi": "यह प्रश्न नीचे दी गई तीन अंकों वाली पाँच संख्याओं पर आधारित है। (बाएँ) 249 237 354 745 428 (दाएँ) (उदाहरण: 697 – पहला अंक = 6, दूसरा अंक = 9 और तीसरा अंक = 7) यदि सबसे बड़ी संख्या के तीसरे अंक को सबसे छोटी संख्या के तीसरे अंक में जोड़ा जाए, तो क्या परिणाम प्राप्त होगा?",
+          "optEn": ["13", "10", "12", "11"],
+          "optHi": ["13", "10", "12", "11"],
+          "ans": 2,
+          "solEn": "Detailed solution for Section 2 Q14.",
+          "solHi": "भाग 2 प्रश्न 14 का विस्तृत हल।"
+        },
+        {
+          "qEn": "Select the triad that follows the same pattern as the two triads given below. Both triads follow the same pattern. JE-LH-OR LG-NJ-QT",
+          "qHi": "उस त्रिक का चयन कीजिए, जो नीचे दिए गए दो त्रिकों के समान पैटर्न का अनुसरण करता है। दोनों त्रिक समान पैटर्न का अनुसरण करते हैं। JE-LH-OR LG-NJ-QT",
+          "optEn": ["NI-PL-SV", "NI-PL-SU", "MI-PL-SU", "MI-OL-SU"],
+          "optHi": ["NI-PL-SV", "NI-PL-SU", "MI-PL-SU", "MI-OL-SU"],
+          "ans": 0,
+          "solEn": "Detailed solution for Section 2 Q15.",
+          "solHi": "भाग 2 प्रश्न 15 का विस्तृत हल।"
+        },
+        {
+          "qEn": "Seven boxes Q, R, S, T, G, H and I are placed one above the other, not necessarily in the same order. Only one box is placed above I. Only three boxes are placed between T and I. S is placed somewhere below T. Only H is placed between I and Q. G is placed somewhere above I. How many boxes are placed between S and I?",
+          "qHi": "सात डिब्बे, Q, R, S, T, G, H और I, एक के ऊपर एक रखे गए हैं, लेकिन जरूरी नहीं कि इसी क्रम में हों। I के ऊपर केवल एक डिब्बा रखा गया है। T और I के बीच केवल तीन डिब्बे रखे गए हैं। S को T के नीचे किसी एक स्थान पर रखा गया है। I और Q के बीच केवल H को रखा गया है। G को I के ऊपर किसी एक स्थान पर रखा गया है। S और I के बीच कितने डिब्बे रखे गए हैं?",
+          "optEn": ["One", "Two", "Three", "Four"],
+          "optHi": ["एक", "दो", "तीन", "चार"],
+          "ans": 3,
+          "solEn": "Detailed solution for Section 2 Q16.",
+          "solHi": "भाग 2 प्रश्न 16 का विस्तृत हल।"
+        },
+        {
+          "qEn": "Refer to the following number and symbol series and answer the question. All numbers are single-digit numbers. Counting is to be done from left to right only. (Left) 5 6 7 8 9 4 3 @ # $ 5 7 % ^ 7 4 # 2 5 (Right) How many symbols are there, each of which is immediately preceded by a number and immediately followed by a number?",
+          "qHi": "निम्नलिखित संख्या और प्रतीक श्रृंखला का संदर्भ लीजिए और नीचे दिए गए प्रश्न का उत्तर दीजिए। सभी संख्याएं केवल एक-अंकीय संख्याएं हैं। गिनती केवल बाएं से दाएं की जानी है। (बाएं) 5 6 7 8 9 4 3 @ # $ 5 7 % ^ 7 4 # 2 5 (दाएं) ऐसे कितने प्रतीक हैं जिनमें से प्रत्येक के ठीक पहले एक संख्या है और ठीक बाद में भी एक संख्या है?",
+          "optEn": ["One", "Two", "None", "Three"],
+          "optHi": ["एक", "दो", "एक भी नहीं", "तीन"],
+          "ans": 0,
+          "solEn": "Detailed solution for Section 2 Q17.",
+          "solHi": "भाग 2 प्रश्न 17 का विस्तृत हल।"
+        },
+        {
+          "qEn": "In a certain code language, A + B means 'A is the sister of B', A – B means 'A is the brother of B', A x B means 'A is the mother of B', A ÷ B means 'A is the father of B'. Based on the above, if 'Y ÷ F – B x S + R', how is Y related to R?",
+          "qHi": "एक निश्चित कूट भाषा में, A + B का अर्थ है कि 'A, B की बहन है' A – B का अर्थ है कि 'A, B का भाई है' A x B का अर्थ है कि 'A, B की माता है' A ÷ B का अर्थ है कि 'A, B का पिता है' उपरोक्त के आधार पर, यदि 'Y ÷ F – B x S + R' है, तो Y का R से क्या संबंध है?",
+          "optEn": ["Mother's father", "Father's father", "Father's mother", "Mother's mother"],
+          "optHi": ["माता का पिता", "पिता का पिता", "पिता की माता", "माता की माता"],
+          "ans": 0,
+          "solEn": "Detailed solution for Section 2 Q18.",
+          "solHi": "भाग 2 प्रश्न 18 का विस्तृत हल।"
+        },
+        {
+          "qEn": "Seven persons A, B, C, D, E, F and G are sitting in a straight line facing north. No one sits to the left of G. Only four persons sit between D and B. A sits second to the right of B. C is the immediate neighbour of both E and A. How many persons sit between G and C?",
+          "qHi": "सात व्यक्ति A, B, C, D, E, F और G उत्तर की ओर अभिमुख होकर एक सीधी पंक्ति में बैठे हैं। G के बाईं ओर कोई नहीं बैठा है। D और B के बीच केवल चार व्यक्ति बैठे हैं। A, B के दाईं ओर दूसरे स्थान पर बैठा है। E और A का निकटतम पड़ोसी C है। G और C के बीच कितने व्यक्ति बैठे हैं?",
+          "optEn": ["Two", "Three", "Five", "One"],
+          "optHi": ["दो", "तीन", "पांच", "एक"],
+          "ans": 1,
+          "solEn": "Detailed solution for Section 2 Q19.",
+          "solHi": "भाग 2 प्रश्न 19 का विस्तृत हल।"
+        },
+        {
+          "qEn": "In a certain code language, 'FOAM' is coded as '6198' and 'LOAM' is coded as '4698'. What is the code for 'L' in the given code language?",
+          "qHi": "किसी निश्चित कूट भाषा में, 'FOAM' को '6198' के रूप में कूटबद्ध किया जाता है और 'LOAM' को '4698' के रूप में कूटबद्ध किया जाता है। दी गई कूट भाषा में 'L' का कूट क्या है?",
+          "optEn": ["1", "4", "9", "6"],
+          "optHi": ["1", "4", "9", "6"],
+          "ans": 1,
+          "solEn": "Detailed solution for Section 2 Q20.",
+          "solHi": "भाग 2 प्रश्न 20 का विस्तृत हल।"
         }
       ]
     }
