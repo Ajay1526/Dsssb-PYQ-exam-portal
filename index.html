@@ -177,10 +177,10 @@ table.it{width:100%;border-collapse:collapse;margin:10px 0}.it th,.it td{border:
 </div>
 
 <div id="screen4" class="screen">
- <div class="top"><span>Online Exam Portal</span><a href="#" target="_blank">Portal</a></div>
+ <div class="top" style="display: none;"><span>Online Exam Portal</span><a href="#" target="_blank">Portal</a></div>
  <div class="tabs" id="tabs"></div>
  <div class="bar"><span>Section</span><span>Time Left : <span id="timer" style="color:#d9534f"></span></span></div>
- <div class="blue" id="secName"></div>
+ <div class="blue" id="secName" style="display: none;"></div>
  <div class="vf"><div><span style="color:#ffeb3b">Question Type : MCQ</span> <span style="margin-left:15px">Marks for correct answer 1 | Negative Marks <span class="neg"></span></span></div>
   <div>View in : <select class="langSel" style="color:#000" onchange="setQLang(this.value)"><option value="en">English</option><option value="hi">हिंदी</option></select></div></div>
  <div class="layout">
@@ -295,16 +295,42 @@ function renderGrid(){
  $('grid').innerHTML=st[si].map((v,i)=>`<div class="p ${c[v]} ${i===qi?'cur':''}" onclick="qi=${i};renderQ()">${i+1}</div>`).join('')}
 function cnt(i){const r=[0,0,0,0,0];st[i].forEach(v=>r[v]++);return r}
 function showSummary(){
- const h=lang==='hi';
- $('sumCur').textContent=secTitle(D.sections[si])+' : ( Current Group )';
- const c=cnt(si);
- $('sumBody').innerHTML=`<tr><td>${secTitle(D.sections[si])}</td><td>${st[si].length}</td><td>${c[2]}</td><td>${c[1]}</td><td>${c[3]}</td><td>${c[4]}</td><td>${c[0]}</td></tr>`;
- $('sumList').innerHTML=D.sections.map((s,i)=>i===si?'':`<p><b>${secTitle(s)} :</b> ( ${i<si?'Completed':'Yet to attempt'} )</p>`).join('');
- const last=si===D.sections.length-1;
- $('sumNote').innerHTML=`Are you sure to submit this Group? Click 'Yes' to proceed; Click 'No' to go back.<br>Dear Candidate, Once the Group is submitted, you cannot revisit and edit your responses.`;
- goTo(5)}
+ const isLast = (si === D.sections.length - 1);
+ 
+ if(!isLast) {
+  // बीच के सेक्शन के लिए सिर्फ उसी सेक्शन की समरी दिखाएँ
+  $('sumCur').textContent = secTitle(D.sections[si]) + ' : ( Current Group )';
+  const c = cnt(si);
+  $('sumBody').innerHTML = `<tr><td>${secTitle(D.sections[si])}</td><td>${st[si].length}</td><td>${c[2]}</td><td>${c[1]}</td><td>${c[3]}</td><td>${c[4]}</td><td>${c[0]}</td></tr>`;
+  $('sumList').innerHTML = D.sections.map((s,i)=>i===si?'':`<p><b>${secTitle(s)} :</b> ( ${i<si?'Completed':'Yet to attempt'} )</p>`).join('');
+  $('sumNote').innerHTML = `Are you sure to submit this Group? Click 'Yes' to proceed; Click 'No' to go back.<br>Dear Candidate, Once the Group is submitted, you cannot revisit and edit your responses.`;
+ } else {
+  // फाइनल सबमिट (आखिरी सेक्शन) पर सभी सेक्शन्स की पूरी समरी एक साथ दिखाएँ
+  $('sumCur').textContent = 'Final Exam Summary (All Sections)';
+  let rows = '';
+  D.sections.forEach((s, idx) => {
+   const sc = cnt(idx);
+   rows += `<tr><td>${secTitle(s)}</td><td>${st[idx].length}</td><td>${sc[2]}</td><td>${sc[1]}</td><td>${sc[3]}</td><td>${sc[4]}</td><td>${sc[0]}</td></tr>`;
+  });
+  $('sumBody').innerHTML = rows;
+  $('sumList').innerHTML = '<p><b>You have completed all sections. Ready for final submission.</b></p>';
+  $('sumNote').innerHTML = `Are you sure you want to finally submit the entire exam? Once submitted, you cannot go back.<br>Click 'Yes' to view your detailed Result Analysis.`;
+ }
+ goTo(5);
+}
+
 function confirmSubmit(){
- if(si<D.sections.length-1){goTo(4);loadSection(si+1)}else finish()}
+ const isLast = (si === D.sections.length - 1);
+ if(!isLast) {
+  // अगले सेक्शन पर जाएँ
+  let nextSi = si + 1;
+  goTo(4);
+  loadSection(nextSi);
+ } else {
+  // परीक्षा पूरी तरह खत्म, रिजल्ट पेज पर भेजें
+  finish();
+ }
+}
 
 // यह रहा नया finish फंक्शन जो रिजल्ट पेज पर ले जाएगा
 function finish(){
@@ -346,7 +372,7 @@ function finish(){
  localStorage.setItem('examAttempts', JSON.stringify(attemptsList));
  localStorage.setItem('lastAttempt', attemptObj.id);
 
- window.location.href = 'result.html';
+ window.location.replace('result.html');
 }
 
 (()=>{const t=$('tabs');let d=false,x=0,l=0;
